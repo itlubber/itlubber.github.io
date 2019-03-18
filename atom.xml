@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ITlubber | a Code Monkey</title>
+  
+  <subtitle>Like a Piece of My Heart</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-03-18T15:52:55.220Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>itlubber</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/03/18/hello-world/"/>
+    <id>http://yoursite.com/2019/03/18/hello-world/</id>
+    <published>2019-03-18T13:49:36.598Z</published>
+    <updated>2019-03-18T15:52:55.220Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+      <category term="Hello World" scheme="http://yoursite.com/categories/Hello-World/"/>
+    
+    
+      <category term="C" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+      <category term="javascrite" scheme="http://yoursite.com/tags/javascrite/"/>
+    
+      <category term="typescrite" scheme="http://yoursite.com/tags/typescrite/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+      <category term="R" scheme="http://yoursite.com/tags/R/"/>
+    
+      <category term="Deep Learning" scheme="http://yoursite.com/tags/Deep-Learning/"/>
+    
+  </entry>
+  
+</feed>
