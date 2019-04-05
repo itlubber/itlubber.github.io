@@ -1980,7 +1980,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f4ffff;
+  background: #74ffb4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2941,6 +2941,17 @@ pre .javascript .function {
   padding-left: 0;
   padding-right: 260px;
 }
+.header-inner {
+  opacity: 0.9;
+}
+.main-inner {
+  opacity: 0.9;
+}
+body {
+  background: url("http://ppg14j89a.bkt.clouddn.com/%E6%B1%9F%E5%8D%97%E7%83%A7%E9%85%924k%E5%8A%A8%E6%BC%AB%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
 .site-brand-wrapper {
   position: relative;
 }
@@ -3181,11 +3192,6 @@ pre .javascript .function {
     text-align: justify;
   }
 }
-body {
-  background: url("http://ppg14j89a.bkt.clouddn.com/%E6%B1%9F%E5%8D%97%E7%83%A7%E9%85%924k%E5%8A%A8%E6%BC%AB%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg");
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
 a {
   color: #1d1626;
   border-bottom: none;
@@ -3280,10 +3286,4 @@ a#download:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.header-inner {
-  opacity: 0.9;
-}
-.main-inner {
-  opacity: 0.9;
 }
