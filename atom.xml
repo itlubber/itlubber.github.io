@@ -5,9 +5,9 @@
   <subtitle>Dedicated to Full Stack Developer</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://itlubber.wiki/"/>
   <updated>2019-04-05T12:31:28.340Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://itlubber.wiki/</id>
   
   <author>
     <name>ITlubber</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/example/hello-world/"/>
-    <id>http://yoursite.com/example/hello-world/</id>
+    <link href="https://itlubber.wiki/example/hello-world/"/>
+    <id>https://itlubber.wiki/example/hello-world/</id>
     <published>2017-08-18T07:41:18.000Z</published>
     <updated>2019-04-05T12:31:28.340Z</updated>
     
@@ -32,26 +32,26 @@
     
     </summary>
     
-      <category term="example" scheme="http://yoursite.com/categories/example/"/>
+      <category term="example" scheme="https://itlubber.wiki/categories/example/"/>
     
     
-      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+      <category term="HTML" scheme="https://itlubber.wiki/tags/HTML/"/>
     
-      <category term="C#" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C#" scheme="https://itlubber.wiki/tags/C/"/>
     
-      <category term="unity 3D" scheme="http://yoursite.com/tags/unity-3D/"/>
+      <category term="unity 3D" scheme="https://itlubber.wiki/tags/unity-3D/"/>
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://itlubber.wiki/tags/Python/"/>
     
-      <category term="NLP" scheme="http://yoursite.com/tags/NLP/"/>
+      <category term="NLP" scheme="https://itlubber.wiki/tags/NLP/"/>
     
-      <category term="ML" scheme="http://yoursite.com/tags/ML/"/>
+      <category term="ML" scheme="https://itlubber.wiki/tags/ML/"/>
     
-      <category term="DL" scheme="http://yoursite.com/tags/DL/"/>
+      <category term="DL" scheme="https://itlubber.wiki/tags/DL/"/>
     
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C++" scheme="https://itlubber.wiki/tags/C/"/>
     
-      <category term="C" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C" scheme="https://itlubber.wiki/tags/C/"/>
     
   </entry>
   
