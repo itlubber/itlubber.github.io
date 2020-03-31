@@ -1,1 +1,3 @@
-http://itlubber.wiki/hello-world/
+http://itlubber.wiki/黑苹果-｜-常见的驱动配置/
+http://itlubber.wiki/黑苹果-｜-详解Clove配置/
+http://itlubber.wiki/hello_world/

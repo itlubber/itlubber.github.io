@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2Fhello-world%2F</url>
+    <title><![CDATA[黑苹果 ｜ 常见的驱动配置]]></title>
+    <url>%2F%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[12345678910111213141516171819202122// mac Panel效果代码块相关var attributes = [ 'autocomplete="off"', 'autocorrect="off"', 'autocapitalize="off"', 'spellcheck="false"', 'contenteditable="true"']var attributesStr = attributes.join(' ')hexo.extend.filter.register('after_post_render', function (data) &#123; while (/&lt;figure class="highlight ([a-zA-Z]+)"&gt;.*?&lt;\/figure&gt;/.test(data.content)) &#123; data.content = data.content.replace(/&lt;figure class="highlight ([a-zA-Z]+)"&gt;.*?&lt;\/figure&gt;/, function () &#123; var language = RegExp.$1 || 'plain' var lastMatch = RegExp.lastMatch lastMatch = lastMatch.replace(/&lt;figure class="highlight /, '&lt;figure class="iseeu highlight /') return '&lt;div class="highlight-wrap"' + attributesStr + 'data-rel="' + language.toUpperCase() + '"&gt;' + lastMatch + '&lt;/div&gt;' &#125;) &#125; return data&#125;)]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[黑苹果 ｜ 详解Clove配置]]></title>
+    <url>%2F%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[Generate static files Generate static files Generate static files Generate static files]]></content>
+      <categories>
+        <category>黑苹果</category>
+      </categories>
+      <tags>
+        <tag>黑苹果</tag>
+        <tag>MacOS</tag>
+        <tag>Clover</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何安装Hexo开始你的博客生涯]]></title>
+    <url>%2Fhello_world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post123456789$ hexo new "My New Post"```wMore info: [Writing](https://hexo.io/docs/writing.html)### Run server``` bash$ hexo server More info: Server Generate static files 1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 支持Markdown Download Now]]></content>
       <categories>
-        <category>example</category>
+        <category>Hexo</category>
       </categories>
       <tags>
         <tag>HTML</tag>

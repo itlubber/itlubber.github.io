@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itlubber.wiki/"/>
-  <updated>2019-04-05T12:31:28.340Z</updated>
+  <updated>2020-03-30T15:59:33.000Z</updated>
   <id>http://itlubber.wiki/</id>
   
   <author>
@@ -17,11 +17,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://itlubber.wiki/hello-world/"/>
-    <id>http://itlubber.wiki/hello-world/</id>
-    <published>2017-08-18T07:41:18.000Z</published>
-    <updated>2019-04-05T12:31:28.340Z</updated>
+    <title>黑苹果 ｜ 常见的驱动配置</title>
+    <link href="http://itlubber.wiki/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE/"/>
+    <id>http://itlubber.wiki/黑苹果-｜-常见的驱动配置/</id>
+    <published>2020-03-30T15:58:15.000Z</published>
+    <updated>2020-03-30T15:59:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;highlight-wrap&quot;autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; spellcheck=&quot;false&quot; contenteditable=&quot;true&quot;data-rel=&quot;JAVA
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>黑苹果 ｜ 详解Clove配置</title>
+    <link href="http://itlubber.wiki/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE/"/>
+    <id>http://itlubber.wiki/黑苹果-｜-详解Clove配置/</id>
+    <published>2020-03-30T14:43:00.000Z</published>
+    <updated>2020-03-30T15:57:29.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;span id=&quot;inline-purple&quot;&gt;Generate static files &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-yellow&quot;&gt;Generate static files &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-gree
+      
+    
+    </summary>
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+    
+      <category term="Clover" scheme="http://itlubber.wiki/tags/Clover/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何安装Hexo开始你的博客生涯</title>
+    <link href="http://itlubber.wiki/hello_world/"/>
+    <id>http://itlubber.wiki/hello_world/</id>
+    <published>2017-08-18T07:41:00.000Z</published>
+    <updated>2020-03-31T06:32:38.000Z</updated>
     
     <summary type="html">
     
@@ -32,7 +78,7 @@
     
     </summary>
     
-      <category term="example" scheme="http://itlubber.wiki/categories/example/"/>
+      <category term="Hexo" scheme="http://itlubber.wiki/categories/Hexo/"/>
     
     
       <category term="HTML" scheme="http://itlubber.wiki/tags/HTML/"/>
