@@ -1913,7 +1913,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c48347;
+  background: #b5ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3215,7 +3215,7 @@ a#download:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .content-wrap {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.8);
 }
 .sidebar {
   background: #fff;
