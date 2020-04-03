@@ -105,7 +105,7 @@
 <meta property="og:site_name" content="ITlubber | A Code Monkey">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2020-04-03T01:43:43.200Z">
+<meta property="og:updated_time" content="2020-04-03T07:27:31.535Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何安装Hexo开始你的博客生涯">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
@@ -157,6 +157,9 @@
   <!-- 页面点击小红心 -->
   <script type="text/javascript" src="/js/src/love.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+  <!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
   
 
 </head>
@@ -362,7 +365,12 @@
         
 
         <div class="post-meta">
-          <span class="post-time">
+            
+              <i class="fa fa-thumb-tack"></i>
+              <font style="color: #f173ac;">置顶</font>
+              <span class="post-meta-divider">|</span>
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -378,7 +386,7 @@
             
 
             
-          </span>
+          
 
           
             <span class="post-category">
@@ -573,7 +581,7 @@
       <!-- 修改时间 -->
       <li>
         <strong>修改时间： </strong>
-        2020年04月03日 - 09:43:43
+        2020年04月03日 - 15:27:31
       </li>
 
       <!-- 引用链接 -->
