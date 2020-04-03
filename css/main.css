@@ -1932,7 +1932,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1f6170;
+  background: #82ffc1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2875,6 +2875,48 @@ body {
   background-attachment: fixed;
   background-size: 100% 100%;
 }
+header {
+  width: 70% !important;
+}
+header.post-header {
+  width: auto !important;
+}
+.container .main-inner {
+  width: 70%;
+}
+.content-wrap {
+  width: calc(100% - 260px);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    width: auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    width: auto !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .main-inner {
+    width: auto !important;
+  }
+}
+@media (max-width: 767px) {
+  .container .main-inner {
+    width: auto !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-wrap {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .content-wrap {
+    width: 100% !important;
+  }
+}
 .site-brand-wrapper {
   position: relative;
 }
@@ -3217,7 +3259,7 @@ a#download:hover {
   cursor: url("/images/pointer.cur"), auto !important;
 }
 .content-wrap {
-  background: #fff;
+  background: rgba(255,255,255,0.7);
 }
 .sidebar {
   background: #fff;
