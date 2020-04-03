@@ -1703,7 +1703,7 @@ pre .javascript .function {
   font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.2);
 }
 .my_post_copyright p {
   margin: 0;
@@ -1932,7 +1932,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #82ffc1;
+  background: #cdbad5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3288,14 +3288,6 @@ body {
 .post .post-type-normal {
   margin-bottom: -50px;
 }
-.post-tags a {
-  padding: 1px 5px;
-  background: #f5f5f5;
-  border-bottom: none;
-}
-.post-tags a:hover {
-  background: #ccc;
-}
 .posts-expand .post-meta {
   margin-bottom: 15px;
 }
@@ -3343,7 +3335,7 @@ body {
   margin: 2em 0 0;
   padding: 0.5em 1em;
   border-left: 3px solid #333;
-  background-color: #f9f9f9;
+  background-color: rgba(242,242,242,0.9);
   list-style: none;
 }
 .post-copyright ul {
@@ -3354,10 +3346,6 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
-}
-.posts-expand .post-tags {
-  margin-top: 15px;
-  text-align: center;
 }
 .posts-expand .post-body img {
   border: none;
@@ -3456,6 +3444,18 @@ highlight-wrap {
 }
 .highlight:hover .btn-copy {
   opacity: 1;
+}
+.posts-expand .post-tags a {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: 0.2s ease-out;
+  padding: 3px 5px;
+  margin: 5px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 15px;
 }
 .feed-link a {
   display: block;
