@@ -1878,7 +1878,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8817;
+  background: #a1bdff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3126,9 +3126,9 @@ span#inline-purple {
 a#download {
   display: inline-block;
   padding: 0 10px;
-  color: #1d1626;
+  color: #333;
   background: transparent;
-  border: 2px solid #1d1626;
+  border: 1px solid #333;
   border-radius: 2px;
   transition: all 0.5s ease;
   font-weight: bold;
@@ -3136,7 +3136,7 @@ a#download {
 a#download:hover {
   background: #f173ac;
   color: #fff;
-  border: 2px solid #f173ac;
+  border: 1px solid #f173ac;
 }
 #rewardButton span {
   height: 35px;
@@ -3227,8 +3227,8 @@ body {
   font-size: 14px;
 }
 .btn {
-  border: 1px solid #f173ac;
-  color: #f173ac;
+  border: 1px solid #333;
+  color: #333;
   margin-top: 20px;
   height: auto;
 }
@@ -3259,6 +3259,13 @@ body {
 .posts-expand .post-tags {
   margin-top: 15px;
   text-align: center;
+}
+.posts-expand .post-body img {
+  border: none;
+  padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+  padding: 3px;
 }
 .feed-link a {
   display: block;
