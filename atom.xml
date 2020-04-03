@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itlubber.wiki/"/>
-  <updated>2020-04-03T01:44:47.112Z</updated>
+  <updated>2020-04-03T17:01:22.667Z</updated>
   <id>http://itlubber.wiki/</id>
   
   <author>
@@ -17,11 +17,91 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势</title>
+    <link href="http://itlubber.wiki/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
+    <id>http://itlubber.wiki/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX插入的正确姿势/</id>
+    <published>2020-04-03T17:00:00.000Z</published>
+    <updated>2020-04-03T17:01:22.667Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/pasted-2.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;前言&lt;br&gt;随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。
+      
+    
+    </summary>
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+    
+      <category term="无线网卡" scheme="http://itlubber.wiki/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用AppleALC声卡仿冒驱动AppleHDA的正确姿势</title>
+    <link href="http://itlubber.wiki/%E4%BD%BF%E7%94%A8AppleALC%E5%A3%B0%E5%8D%A1%E4%BB%BF%E5%86%92%E9%A9%B1%E5%8A%A8AppleHDA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
+    <id>http://itlubber.wiki/使用AppleALC声卡仿冒驱动AppleHDA的正确姿势/</id>
+    <published>2020-04-03T16:58:00.000Z</published>
+    <updated>2020-04-03T17:00:04.531Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/pasted-1.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;前言&lt;br&gt;经常给网友仿冒声卡驱动, 一直都没有将过程写下来,鉴于每天会有许多人问如何仿冒声卡,就想将过程记录下来,供大家参考学习&lt;/p&gt;
+&lt;p&gt;提取co
+      
+    
+    </summary>
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+    
+      <category term="Apple ALC" scheme="http://itlubber.wiki/tags/Apple-ALC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【黑果小兵】macOS Catalina 10.15.4 19E266 正式版 with Clover 5107原版镜像[双EFI版][UEFI and MBR]</title>
+    <link href="http://itlubber.wiki/%E3%80%90%E9%BB%91%E6%9E%9C%E5%B0%8F%E5%85%B5%E3%80%91macOS-Catalina-10-15-4-19E266-%E6%AD%A3%E5%BC%8F%E7%89%88-with-Clover-5107%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F-%E5%8F%8CEFI%E7%89%88-UEFI-and-MBR/"/>
+    <id>http://itlubber.wiki/【黑果小兵】macOS-Catalina-10-15-4-19E266-正式版-with-Clover-5107原版镜像-双EFI版-UEFI-and-MBR/</id>
+    <published>2020-04-03T16:56:00.000Z</published>
+    <updated>2020-04-03T16:58:09.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/pasted-0.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;macOS Catalina正式版&lt;br&gt;Mac 上你喜爱的一切，都因 macOS Catalina 而变得更精彩。你可以享用两款全新媒体 app；用新的
+      
+    
+    </summary>
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>黑苹果 ｜ 常见的驱动配置</title>
     <link href="http://itlubber.wiki/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE/"/>
     <id>http://itlubber.wiki/黑苹果-｜-常见的驱动配置/</id>
-    <published>2020-03-30T15:58:15.000Z</published>
-    <updated>2020-04-03T01:44:47.112Z</updated>
+    <published>2020-03-30T15:58:00.000Z</published>
+    <updated>2020-04-03T17:01:50.459Z</updated>
     
     <summary type="html">
     
@@ -29,6 +109,12 @@
     
     </summary>
     
+      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+    
+      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
     
   </entry>
   

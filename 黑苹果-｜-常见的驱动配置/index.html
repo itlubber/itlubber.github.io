@@ -134,7 +134,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="黑苹果,MacOS,">
 
 
 
@@ -148,13 +148,14 @@
 
 
 <meta name="description" content="黑苹果 ｜ 常见的驱动配置">
+<meta name="keywords" content="黑苹果,MacOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="黑苹果 ｜ 常见的驱动配置">
 <meta property="og:url" content="http://itlubber.wiki/黑苹果-｜-常见的驱动配置/index.html">
 <meta property="og:site_name" content="ITlubber | A Code Monkey">
 <meta property="og:description" content="黑苹果 ｜ 常见的驱动配置">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2020-04-03T01:44:47.112Z">
+<meta property="og:updated_time" content="2020-04-03T17:01:50.459Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="黑苹果 ｜ 常见的驱动配置">
 <meta name="twitter:description" content="黑苹果 ｜ 常见的驱动配置">
@@ -179,7 +180,7 @@
       applicationID: '',
       apiKey: '',
       indexName: '',
-      hits: {"per_page":10},
+      hits: {"per_page":5},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
@@ -348,20 +349,26 @@
   
     <div class="site-search">
       
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
-    </div>
   </div>
-  <div id="local-search-result"></div>
-</div>
+
 
 
 
@@ -424,7 +431,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-30T23:58:15+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-30T23:58:00+08:00">
                 2020-03-30
               </time>
             
@@ -434,6 +441,28 @@
             
           
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/黑苹果/" itemprop="url" rel="index">
+                    <span itemprop="name">黑苹果</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -547,6 +576,14 @@
     
 
     
+      <div class="post-tags">
+          
+            <a href="/tags/黑苹果/" rel="tag"><i class="fa fa-tag"></i> 黑苹果</a>
+          
+            <a href="/tags/MacOS/" rel="tag"><i class="fa fa-tag"></i> MacOS</a>
+          
+      </div>
+    
     
     <footer class="post-footer">
 
@@ -574,13 +611,13 @@
       <!-- 创建时间 -->
       <li>
         <strong>创建时间： </strong>
-        2020年03月30日 - 23:58:15
+        2020年03月30日 - 23:58:00
       </li>
 
       <!-- 修改时间 -->
       <li>
         <strong>修改时间： </strong>
-        2020年04月03日 - 09:44:47
+        2020年04月04日 - 01:01:50
       </li>
 
       <!-- 引用链接 -->
@@ -629,6 +666,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/【黑果小兵】macOS-Catalina-10-15-4-19E266-正式版-with-Clover-5107原版镜像-双EFI版-UEFI-and-MBR/" rel="prev" title="【黑果小兵】macOS Catalina 10.15.4 19E266 正式版 with Clover 5107原版镜像[双EFI版][UEFI and MBR]">
+                【黑果小兵】macOS Catalina 10.15.4 19E266 正式版 with Clover 5107原版镜像[双EFI版][UEFI and MBR] <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -703,7 +744,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -725,7 +766,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -875,7 +916,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">221</span>
+    <span title="Site words total count">1.6k</span>
   
 </div>
 <div>
@@ -1395,6 +1436,19 @@ translateInitilization();
   </script>
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
