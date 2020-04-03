@@ -1932,7 +1932,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cdbad5;
+  background: #2bffcb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3158,7 +3158,7 @@ header.post-header {
   }
 }
 a {
-  color: #1d1626;
+  color: #333;
   border-bottom: none;
   border-bottom: 1px solid #1d1626;
 }
@@ -3259,7 +3259,8 @@ a#download:hover {
   cursor: url("/images/pointer.cur"), auto !important;
 }
 .content-wrap {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.5);
+  color: #333;
 }
 .sidebar {
   background: #fff;
@@ -3290,6 +3291,7 @@ body {
 }
 .posts-expand .post-meta {
   margin-bottom: 15px;
+  color: #333;
 }
 .post-button {
   margin: 0;
@@ -3302,7 +3304,6 @@ body {
 }
 .comments {
   margin: 0px;
-  border: 1px solid rgba(33,33,33,0.3);
 }
 .v .vwrap .vcontrol {
   padding-top: 0px;
@@ -3322,6 +3323,7 @@ body {
   color: #333;
   margin-top: 20px;
   height: auto;
+  background: none;
 }
 .btn:hover {
   background: #f173ac;
