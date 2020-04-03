@@ -1932,7 +1932,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8b57ff;
+  background: #f56fa2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3146,13 +3146,12 @@ header.post-header {
 }
 a {
   color: #333;
-  border-bottom: none;
-  border-bottom: 1px solid #1d1626;
+  border-bottom: 2px solid #f173ac;
 }
 a:hover {
   color: #f173ac;
   border-bottom: none;
-  border-bottom: 1px solid #f173ac;
+  border-bottom: 2px solid #f173ac;
 }
 span#inline-yellow {
   display: inline-block;
