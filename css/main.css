@@ -1968,7 +1968,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #52ff6f;
+  background: #ff346b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3539,6 +3539,9 @@ highlight-wrap {
 }
 #needsharebutton-postbottom {
   display: inline-block;
+}
+.vempty {
+  font-size: 12px;
 }
 .feed-link a {
   display: block;
