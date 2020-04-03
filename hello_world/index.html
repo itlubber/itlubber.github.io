@@ -97,18 +97,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta name="keywords" content="HTML,C#,unity 3D,Python,NLP,ML,DL,C++,C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何安装Hexo开始你的博客生涯">
 <meta property="og:url" content="http://itlubber.wiki/hello_world/index.html">
 <meta property="og:site_name" content="ITlubber | A Code Monkey">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:locale" content="zh">
-<meta property="og:updated_time" content="2020-03-31T06:32:38.000Z">
+<meta property="og:updated_time" content="2020-04-03T01:43:43.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何安装Hexo开始你的博客生涯">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 
 
 
@@ -118,7 +118,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":3,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":10,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -484,7 +484,7 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><a id="more"></a></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">```w</span><br><span class="line"></span><br><span class="line">More info: [Writing](https://hexo.io/docs/writing.html)</span><br><span class="line"></span><br><span class="line"><span class="comment">### Run server</span></span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <p><span id="inline-purple">Generate static files </span><br><div class="highlight-wrap" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div></p>
@@ -544,23 +544,67 @@
       
         <div>
           
-<div class="my_post_copyright">
-  <script src="https://cdn.bootcss.com/clipboard.js/2.0.6/clipboard.js"></script>
-  
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
-  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <div>
+    <!-- JS库 clipboard 拷贝内容到粘贴板-->
+    <script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.min.js"></script>
 
-  <p font-size="50%"><span>本文标题:</span>如何安装Hexo开始你的博客生涯</p>
-  <p font-size="50%"><span>文章作者:</span>ITlubber</p>
-  <p font-size="50%"><span>发布时间:</span>2017年08月18日 - 15:41:00</p>
-  <p font-size="50%"><span>最后更新:</span>2020年03月31日 - 14:32:38</p>
-  <p font-size="50%"><span>原始链接:</span><a href="/hello_world/" title="如何安装Hexo开始你的博客生涯">http://itlubber.wiki/hello_world/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://itlubber.wiki/hello_world/" aria-label="复制成功！" font-color="#f173ac"></i></span>
-  </p>
-  <p font-size="50%"><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
+    <!-- JS库 sweetalert 显示提示信息-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <ul class="post-copyright">
+      <!-- 本文标题 -->
+      <li>
+        <strong>本文标题： </strong>
+        如何安装Hexo开始你的博客生涯
+      </li>
+
+      <!-- 本文作者 -->
+      <li class="post-copyright-author">
+        <strong>本文作者： </strong>
+        ITlubber
+      </li>
+
+      <!-- 创建时间 -->
+      <li>
+        <strong>创建时间： </strong>
+        2017年08月18日 - 15:41:00
+      </li>
+
+      <!-- 修改时间 -->
+      <li>
+        <strong>修改时间： </strong>
+        2020年04月03日 - 09:43:43
+      </li>
+
+      <!-- 引用链接 -->
+      <li class="post-copyright-link">
+        <strong>引用链接：</strong>
+        <a href="/hello_world/" title="如何安装Hexo开始你的博客生涯">http://itlubber.wiki/hello_world/</a>
+        <span class="copy-path" title="点击复制引用链接">
+        <i style="cursor: pointer" class="fa fa-clipboard" data-clipboard-text="http://itlubber.wiki/hello_world/" aria-label="复制成功"></i></span>
+      </li>
+
+      <!-- 版权声明 -->
+      <li class="post-copyright-license">
+        <strong> 版权声明： </strong>
+        本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+      </li>
+    </ul>
+
+    <script>
+      var clipboard = new ClipboardJS('.fa-clipboard');
+      clipboard.on('success', function(target){
+        var message = document.createElement('div');
+        message.innerHTML = '<i class="fa fa-check-circle message-icon"></i><span class="message-content">' + target.trigger.getAttribute('aria-label') + '</span>';
+        swal({
+          content: message,
+          className: "copy-success-message",
+          timer: 1000,
+          button: false
+        });
+      });
+    </script>
+  </div>
 
         </div>
       
@@ -835,7 +879,6 @@
           
         </div>
       
-
     </div>
   </aside>
 
@@ -861,10 +904,8 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">207</span>
+    <span title="Site words total count">221</span>
   
-
-
 </div>
 <div>
 
@@ -1523,8 +1564,60 @@ translateInitilization();
 
   
 
-  <script src="https://cdn.bootcss.com/clipboard.js/2.0.6/clipboard.js"></script>
-<script type="text/javascript" src="/js/src/custom.js"></script>
+  <script type="text/javascript" src="/js/src/custom.js"></script>
+
+
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+          $('#header').wobbleWindow({
+            radius: 50,
+            movementTop: false,
+            movementLeft: false,
+            movementRight: false,
+            debug: false,
+          });
+        
+
+        
+          $('#sidebar').wobbleWindow({
+            radius: 50,
+            movementLeft: false,
+            movementTop: false,
+            movementBottom: false,
+            position: 'fixed',
+            debug: false,
+          });
+        
+
+        
+          $('#footer').wobbleWindow({
+            radius: 50,
+            movementBottom: false,
+            movementLeft: false,
+            movementRight: false,
+            offsetX: ,
+            position: 'absolute',
+            debug: false,
+          });
+        
+      });
+    }
+  </script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = false;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
 
 </body>
 </html>

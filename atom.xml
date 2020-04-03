@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itlubber.wiki/"/>
-  <updated>2020-03-30T15:59:33.000Z</updated>
+  <updated>2020-04-03T01:44:47.112Z</updated>
   <id>http://itlubber.wiki/</id>
   
   <author>
@@ -21,14 +21,11 @@
     <link href="http://itlubber.wiki/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE/"/>
     <id>http://itlubber.wiki/黑苹果-｜-常见的驱动配置/</id>
     <published>2020-03-30T15:58:15.000Z</published>
-    <updated>2020-03-30T15:59:33.000Z</updated>
+    <updated>2020-04-03T01:44:47.112Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;div class=&quot;highlight-wrap&quot;autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; autocapitalize=&quot;off&quot; spellcheck=&quot;false&quot; contenteditable=&quot;true&quot;data-rel=&quot;JAVA
-      
+      &lt;p&gt;黑苹果 ｜ 常见的驱动配置&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -40,14 +37,11 @@
     <link href="http://itlubber.wiki/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE/"/>
     <id>http://itlubber.wiki/黑苹果-｜-详解Clove配置/</id>
     <published>2020-03-30T14:43:00.000Z</published>
-    <updated>2020-03-30T15:57:29.000Z</updated>
+    <updated>2020-04-03T01:44:10.094Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;span id=&quot;inline-purple&quot;&gt;Generate static files &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-yellow&quot;&gt;Generate static files &lt;/span&gt;&lt;br&gt;&lt;span id=&quot;inline-gree
-      
+      &lt;p&gt;详解Clove配置&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -67,14 +61,11 @@
     <link href="http://itlubber.wiki/hello_world/"/>
     <id>http://itlubber.wiki/hello_world/</id>
     <published>2017-08-18T07:41:00.000Z</published>
-    <updated>2020-03-31T06:32:38.000Z</updated>
+    <updated>2020-04-03T01:43:43.200Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
