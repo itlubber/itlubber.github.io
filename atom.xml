@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itlubber.wiki/"/>
-  <updated>2020-04-03T17:01:22.667Z</updated>
+  <updated>2020-04-04T04:21:25.556Z</updated>
   <id>http://itlubber.wiki/</id>
   
   <author>
@@ -21,14 +21,12 @@
     <link href="http://itlubber.wiki/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
     <id>http://itlubber.wiki/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX插入的正确姿势/</id>
     <published>2020-04-03T17:00:00.000Z</published>
-    <updated>2020-04-03T17:01:22.667Z</updated>
+    <updated>2020-04-04T04:21:25.556Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/images/pasted-2.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;前言&lt;br&gt;随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。
-      
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-2.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;前言&lt;br&gt;随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。&lt;/p&gt;
+&lt;p&gt;从几个月前我就开始尝试驱动 DW1820A ，WIFI 驱动没问题，但是蓝牙各种翻车各种摔。功夫不负有心人，在众多热心网友的不断努力下，终于解决了蓝牙固件无法上传的问题，也因此就有了这篇驱动教程。&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -48,15 +46,11 @@
     <link href="http://itlubber.wiki/%E4%BD%BF%E7%94%A8AppleALC%E5%A3%B0%E5%8D%A1%E4%BB%BF%E5%86%92%E9%A9%B1%E5%8A%A8AppleHDA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
     <id>http://itlubber.wiki/使用AppleALC声卡仿冒驱动AppleHDA的正确姿势/</id>
     <published>2020-04-03T16:58:00.000Z</published>
-    <updated>2020-04-03T17:00:04.531Z</updated>
+    <updated>2020-04-04T04:21:27.768Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/images/pasted-1.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;前言&lt;br&gt;经常给网友仿冒声卡驱动, 一直都没有将过程写下来,鉴于每天会有许多人问如何仿冒声卡,就想将过程记录下来,供大家参考学习&lt;/p&gt;
-&lt;p&gt;提取co
-      
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-1.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;前言&lt;br&gt;经常给网友仿冒声卡驱动, 一直都没有将过程写下来,鉴于每天会有许多人问如何仿冒声卡,就想将过程记录下来,供大家参考学习&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -76,14 +70,11 @@
     <link href="http://itlubber.wiki/%E3%80%90%E9%BB%91%E6%9E%9C%E5%B0%8F%E5%85%B5%E3%80%91macOS-Catalina-10-15-4-19E266-%E6%AD%A3%E5%BC%8F%E7%89%88-with-Clover-5107%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F-%E5%8F%8CEFI%E7%89%88-UEFI-and-MBR/"/>
     <id>http://itlubber.wiki/【黑果小兵】macOS-Catalina-10-15-4-19E266-正式版-with-Clover-5107原版镜像-双EFI版-UEFI-and-MBR/</id>
     <published>2020-04-03T16:56:00.000Z</published>
-    <updated>2020-04-03T16:58:09.900Z</updated>
+    <updated>2020-04-04T04:21:29.717Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;img src=&quot;/images/pasted-0.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;macOS Catalina正式版&lt;br&gt;Mac 上你喜爱的一切，都因 macOS Catalina 而变得更精彩。你可以享用两款全新媒体 app；用新的
-      
+      &lt;p&gt;&lt;img src=&quot;/images/pasted-0.png&quot; alt=&quot;upload successful&quot;&gt;&lt;br&gt;macOS Catalina正式版&lt;br&gt;Mac 上你喜爱的一切，都因 macOS Catalina 而变得更精彩。你可以享用两款全新媒体 app；用新的查找 app 定位遗失的 Mac；而你常用的 iPad app 现在也有了 Mac 版。你甚至可以将 iPad 当作第二个显示屏，扩展桌面空间。现在，无论做什么，你将拥有远超以往的体验&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -147,7 +138,7 @@
     <link href="http://itlubber.wiki/hello_world/"/>
     <id>http://itlubber.wiki/hello_world/</id>
     <published>2017-08-18T07:41:00.000Z</published>
-    <updated>2020-04-03T07:27:31.535Z</updated>
+    <updated>2020-04-04T04:20:28.793Z</updated>
     
     <summary type="html">
     
