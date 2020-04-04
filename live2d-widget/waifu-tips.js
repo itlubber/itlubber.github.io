@@ -260,8 +260,8 @@ function initWidget(config, apiPath = "/") {
 		};
 	}
 	document.body.insertAdjacentHTML("beforeend", `<div id="waifu-toggle">
-			<span>看板娘</span>
-		</div>`);
+			<span><i class="fa fa-play" aria-hidden="true"></i></span>
+		</div>`);	
 	let toggle = document.getElementById("waifu-toggle");
 	toggle.addEventListener("click", () => {
 		toggle.classList.remove("waifu-toggle-active");
