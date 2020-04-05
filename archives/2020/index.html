@@ -847,8 +847,22 @@
   <span class="with-love">
     <i class="fa fa-terminal"></i>
   </span>
+  <!--
+  <span class="author" itemprop="copyrightHolder">ITlubber</span>
+  -->
   
-  <!--《添加网站运行时间  <br/>-->
+    <!-- <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span> -->
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">1.6k</span>
+  
+</div>
+<div>
+
+<!--《添加网站运行时间  <br/>-->
   
       <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
       <script>
@@ -856,7 +870,7 @@
 
       function createtime() {
           //此处修改你的建站时间或者网站上线时间
-          var create_time = '07/25/2018 12:00:00';
+          var grt = new Date("07/25/2018 12:00:00");
           now.setTime(now.getTime() + 250);
           days = (now - grt) / 1000 / 60 / 60 / 24;
           dnum = Math.floor(days);
@@ -875,7 +889,7 @@
           if (String(snum).length == 1) {
               snum = "0" + snum;
           }
-          document.getElementById("timeDate").innerHTML = " | 本站已安全运行 " + dnum + " 天 ";
+          document.getElementById("timeDate").innerHTML = " 本站已安全运行 " + dnum + " 天 ";
           document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
       }
       setInterval("createtime()", 250);
@@ -883,21 +897,7 @@
   
 <!-- 添加网站运行时间》-->
 
-  <!--
-  <span class="author" itemprop="copyrightHolder">ITlubber</span>
-  -->
-  <br>
-  
-    <!-- <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span> -->
-    
-      <span class="post-meta-item-text">Site words total count&#58;</span>
-    
-    <span title="Site words total count">1.6k</span>
-  
-</div>
-<div>
+
 
 
 
