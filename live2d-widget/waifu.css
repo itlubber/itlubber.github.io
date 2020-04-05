@@ -24,7 +24,7 @@
 
 #waifu {
 	bottom: -1000px;	
-	right: 30px;
+	right: 0px;
 	line-height: 0;
 	position: fixed;
 	transform: translateY(3px);
