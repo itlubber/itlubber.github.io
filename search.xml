@@ -1,189 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势</title>
-      <link href="/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
-      <url>/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/.wiki//loading.gif" data-original="/images/pasted-2.png" alt="upload successful"><br>前言<br>随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。</p><p>从几个月前我就开始尝试驱动 DW1820A ，WIFI 驱动没问题，但是蓝牙各种翻车各种摔。功夫不负有心人，在众多热心网友的不断努力下，终于解决了蓝牙固件无法上传的问题，也因此就有了这篇驱动教程。<br><a id="more"></a><br>为什么是 DW1820A<br>新款部分笔记本只能塞下背面没有元器件的无线网卡，比如[联想小新PRO 13 2019]，此为刚需<br>价格：百元以内，不排除未来有涨价的可能<br>规格/参数：<br>DW1820A/BCM94350ZAE<br>M.2 2230<br>802.11ac 双频 支持2.4GHz/5GHz<br>867Mbps<br>BlueTooth 4.1<br>操作系统：支持 macOS / Windows / linux<br>已知支持的设备信息<br>WLAN:<br>Vendor: 0x14E4<br>Device: 0x43A3<br>Sub Vendor: 1028 or 106B<br>Sub Device: 0021 0022 0023 075a<br>Bluetooth:<br>Vendor ID: 0x0A5C<br>Product ID: 0x6412 0x6414<br>DELL DW1820A设备信息整理<br>Part Number    Manufacturer    Module    WLAN    BT 4.1<br>CN-0VW3T3    Dell Wireless 1820A 802.11ac    BCM94350ZAE_2    1028:0021    [0a5c:6412]<br>CN-0VW3T3    Dell Wireless 1820A 802.11ac    BCM94356ZEPA50DX_2    1028:0021    [0a5c:6412]<br>CN-096JNT    Dell Wireless 1820A 802.11ac    BCM94356ZEPA50DX_2    1028:0022    [0a5c:6412]<br>CN-08PKF4    Dell Wireless 1820A 802.11ac    BCM94356ZEPA50DX_2    1028:0023    [0a5c:6412]<br>联想版BCM94350设备信息整理<br>Part Number    Manufacturer    Module    WLAN    BT 4.1<br>00JT493    Lenovo    BCM94350ZAE_2    1028:075a    [0a5c:6414]<br>00JT494    Lenovo    BCM94350ZAE_2    1028:075a    [0a5c:6414]<br>联想及绝大多数机型可能需要屏蔽针脚测试，详见下图</p><p>macOS驱动方法<br>采用 Device-&gt;Properties 注入参数以便于直接驱动 AirPortBrcm4360 而不是驱动 AirPort.BrcmNIC，这样做的好处就是避免某一天苹果不提供AirPortBrcm4350的支持，便于支持未来的系统，包括macOS Catalina等。</p><p>WLAN无线网卡<br>如果开机直接就驱动了WIFI无线网卡并且能持续、稳定地工作，那么下面这段内容就可以直接跳过，转到驱动蓝牙部分。</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title><![CDATA[DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势]]></title>
+    <url>%2FDW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF%2F</url>
+    <content type="text"><![CDATA[前言随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。 从几个月前我就开始尝试驱动 DW1820A ，WIFI 驱动没问题，但是蓝牙各种翻车各种摔。功夫不负有心人，在众多热心网友的不断努力下，终于解决了蓝牙固件无法上传的问题，也因此就有了这篇驱动教程。为什么是 DW1820A新款部分笔记本只能塞下背面没有元器件的无线网卡，比如[联想小新PRO 13 2019]，此为刚需价格：百元以内，不排除未来有涨价的可能规格/参数：DW1820A/BCM94350ZAEM.2 2230802.11ac 双频 支持2.4GHz/5GHz867MbpsBlueTooth 4.1操作系统：支持 macOS / Windows / linux已知支持的设备信息WLAN:Vendor: 0x14E4Device: 0x43A3Sub Vendor: 1028 or 106BSub Device: 0021 0022 0023 075aBluetooth:Vendor ID: 0x0A5CProduct ID: 0x6412 0x6414DELL DW1820A设备信息整理Part Number Manufacturer Module WLAN BT 4.1CN-0VW3T3 Dell Wireless 1820A 802.11ac BCM94350ZAE_2 1028:0021 [0a5c:6412]CN-0VW3T3 Dell Wireless 1820A 802.11ac BCM94356ZEPA50DX_2 1028:0021 [0a5c:6412]CN-096JNT Dell Wireless 1820A 802.11ac BCM94356ZEPA50DX_2 1028:0022 [0a5c:6412]CN-08PKF4 Dell Wireless 1820A 802.11ac BCM94356ZEPA50DX_2 1028:0023 [0a5c:6412]联想版BCM94350设备信息整理Part Number Manufacturer Module WLAN BT 4.100JT493 Lenovo BCM94350ZAE_2 1028:075a [0a5c:6414]00JT494 Lenovo BCM94350ZAE_2 1028:075a [0a5c:6414]联想及绝大多数机型可能需要屏蔽针脚测试，详见下图 macOS驱动方法采用 Device-&gt;Properties 注入参数以便于直接驱动 AirPortBrcm4360 而不是驱动 AirPort.BrcmNIC，这样做的好处就是避免某一天苹果不提供AirPortBrcm4350的支持，便于支持未来的系统，包括macOS Catalina等。 WLAN无线网卡如果开机直接就驱动了WIFI无线网卡并且能持续、稳定地工作，那么下面这段内容就可以直接跳过，转到驱动蓝牙部分。]]></content>
       <categories>
-          
-          <category> 黑苹果 </category>
-          
+        <category>黑苹果</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 黑苹果 </tag>
-            
-            <tag> MacOS </tag>
-            
-            <tag> 无线网卡 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用AppleALC声卡仿冒驱动AppleHDA的正确姿势</title>
-      <link href="/%E4%BD%BF%E7%94%A8AppleALC%E5%A3%B0%E5%8D%A1%E4%BB%BF%E5%86%92%E9%A9%B1%E5%8A%A8AppleHDA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
-      <url>/%E4%BD%BF%E7%94%A8AppleALC%E5%A3%B0%E5%8D%A1%E4%BB%BF%E5%86%92%E9%A9%B1%E5%8A%A8AppleHDA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/.wiki//loading.gif" data-original="/images/pasted-1.png" alt="upload successful"><br>前言<br>经常给网友仿冒声卡驱动, 一直都没有将过程写下来,鉴于每天会有许多人问如何仿冒声卡,就想将过程记录下来,供大家参考学习<br><a id="more"></a><br>提取codec<br>通过CLOVER提取codec<br>操作方法：</p><p>CLOVER v2.4k r4886或者以上，CLOVER下载链接<br>在安装CLOVER时请勾选AudioDex-64.efi<br>CLOVER引导界面，按F8快捷键，它会在EFI/CLOVER/misc目录下生成以HdaCodec开头的文件，其中的HdaCodec#x (Realtek ALCxxx).txt就是你需要提取的codec<br>通过linux提取codec<br>制作Ubuntu Linux启动U盘:<br>下载Ubuntu Linux镜像,可以选择国内开源镜像站点下载:<br>网易 搜狐 阿里云<br>如果你只是想通过Linux提取codec的话,可以随便下载个旧的版本即可,比如这个ubuntu 14.04.5LTS,如果想作为日后的生产力工具的话,我推荐你下载最新发布的ubuntu 17.10</p>]]></content>
-      
-      
+      <tags>
+        <tag>黑苹果</tag>
+        <tag>MacOS</tag>
+        <tag>无线网卡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[使用AppleALC声卡仿冒驱动AppleHDA的正确姿势]]></title>
+    <url>%2F%E4%BD%BF%E7%94%A8AppleALC%E5%A3%B0%E5%8D%A1%E4%BB%BF%E5%86%92%E9%A9%B1%E5%8A%A8AppleHDA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF%2F</url>
+    <content type="text"><![CDATA[前言经常给网友仿冒声卡驱动, 一直都没有将过程写下来,鉴于每天会有许多人问如何仿冒声卡,就想将过程记录下来,供大家参考学习提取codec通过CLOVER提取codec操作方法： CLOVER v2.4k r4886或者以上，CLOVER下载链接在安装CLOVER时请勾选AudioDex-64.efiCLOVER引导界面，按F8快捷键，它会在EFI/CLOVER/misc目录下生成以HdaCodec开头的文件，其中的HdaCodec#x (Realtek ALCxxx).txt就是你需要提取的codec通过linux提取codec制作Ubuntu Linux启动U盘:下载Ubuntu Linux镜像,可以选择国内开源镜像站点下载:网易 搜狐 阿里云如果你只是想通过Linux提取codec的话,可以随便下载个旧的版本即可,比如这个ubuntu 14.04.5LTS,如果想作为日后的生产力工具的话,我推荐你下载最新发布的ubuntu 17.10]]></content>
       <categories>
-          
-          <category> 黑苹果 </category>
-          
+        <category>黑苹果</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 黑苹果 </tag>
-            
-            <tag> MacOS </tag>
-            
-            <tag> Apple ALC </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>【黑果小兵】macOS Catalina 10.15.4 19E266 正式版 with Clover 5107原版镜像[双EFI版][UEFI and MBR]</title>
-      <link href="/%E3%80%90%E9%BB%91%E6%9E%9C%E5%B0%8F%E5%85%B5%E3%80%91macOS-Catalina-10-15-4-19E266-%E6%AD%A3%E5%BC%8F%E7%89%88-with-Clover-5107%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F-%E5%8F%8CEFI%E7%89%88-UEFI-and-MBR/"/>
-      <url>/%E3%80%90%E9%BB%91%E6%9E%9C%E5%B0%8F%E5%85%B5%E3%80%91macOS-Catalina-10-15-4-19E266-%E6%AD%A3%E5%BC%8F%E7%89%88-with-Clover-5107%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F-%E5%8F%8CEFI%E7%89%88-UEFI-and-MBR/</url>
-      
-        <content type="html"><![CDATA[<p><img src="/.wiki//loading.gif" data-original="/images/pasted-0.png" alt="upload successful"><br>macOS Catalina正式版<br>Mac 上你喜爱的一切，都因 macOS Catalina 而变得更精彩。你可以享用两款全新媒体 app；用新的查找 app 定位遗失的 Mac；而你常用的 iPad app 现在也有了 Mac 版。你甚至可以将 iPad 当作第二个显示屏，扩展桌面空间。现在，无论做什么，你将拥有远超以往的体验<br><a id="more"></a></p><p>新内容<br>版本记录: 2020年3月25日</p><p>版本: 10.15.4 19E266</p><p>macOS Catalina 10.15.4引入了iCloud Drive文件夹共享，屏幕时间通信限制，Apple Music时间同步的歌词视图等。此更新还提高了Mac的稳定性，可靠性和安全性。</p><p>Finder<br>•从Finder共享iCloud Drive文件夹</p><p>•进行控制，以仅将访问权限限制为您明确邀请的人员，或者将访问权限授予具有文件夹链接的任何人</p><p>•有权选择谁可以进行更改和上传文件以及谁只能查看和下载文件</p><p>Screen Time<br>•沟通限制，用于控制您的孩子在一整天和停机期间可以与谁进行沟通和联系</p><p>•为孩子播放音乐视频的控制</p><p>Music<br>•Apple Music的时间同步歌词视图，包括通过单击歌词视图中的一行来跳到歌曲中您喜欢的部分的功能</p><p>Safari<br>•选择将Chrome密码导入到iCloud钥匙串中，以便在Safari和所有设备中轻松自动填充密码</p><p>•用于复制选项卡和关闭当前选项卡右侧的所有选项卡的控件</p><p>•兼容计算机上对Netflix内容的HDR播放支持</p><p>带有Apple Arcade的App Store<br>•通用购买支持可在iPhone，iPod touch，iPad，Mac和Apple TV上单个购买参与应用程序</p><p>•最近玩过的Arcade游戏出现在Arcade选项卡中，因此您可以继续在iPhone，iPod touch，iPad，Mac和Apple TV上玩</p><p>Pro Display XDR<br>•您可以通过从多个色域，白点，亮度和转印功能选项中进行选择，来定制适合特定工作流程需求的参考模式</p><p>辅助功能<br>•头部指针首选项，用于根据头部的精确移动在屏幕上移动光标</p><p>此更新还包括错误修复和其他改进。<br>•高动态范围输出到兼容HDR10的第三方显示器和与DisplayPort或HDMI连接的电视</p><p>•Outlook.com帐户的OAuth身份验证支持可提高安全性</p><p>•在辅助设备上升级到iCloud提醒时支持CalDav迁移</p><p>•解决了在启用“暗模式”时在应用之间复制的文本可能不可见的问题</p><p>•修复了Safari中验证码图块可能无法正确显示的问题</p><p>•解决了提醒可能会发送已完成提醒的通知的问题</p><p>•解决了从睡眠状态唤醒后LG UltraFine 5K显示屏的屏幕亮度问题</p>]]></content>
-      
-      
+      <tags>
+        <tag>黑苹果</tag>
+        <tag>MacOS</tag>
+        <tag>Apple ALC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[【黑果小兵】macOS Catalina 10.15.4 19E266 正式版 with Clover 5107原版镜像[双EFI版][UEFI and MBR]]]></title>
+    <url>%2F%E3%80%90%E9%BB%91%E6%9E%9C%E5%B0%8F%E5%85%B5%E3%80%91macOS-Catalina-10-15-4-19E266-%E6%AD%A3%E5%BC%8F%E7%89%88-with-Clover-5107%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F-%E5%8F%8CEFI%E7%89%88-UEFI-and-MBR%2F</url>
+    <content type="text"><![CDATA[macOS Catalina正式版Mac 上你喜爱的一切，都因 macOS Catalina 而变得更精彩。你可以享用两款全新媒体 app；用新的查找 app 定位遗失的 Mac；而你常用的 iPad app 现在也有了 Mac 版。你甚至可以将 iPad 当作第二个显示屏，扩展桌面空间。现在，无论做什么，你将拥有远超以往的体验 新内容版本记录: 2020年3月25日 版本: 10.15.4 19E266 macOS Catalina 10.15.4引入了iCloud Drive文件夹共享，屏幕时间通信限制，Apple Music时间同步的歌词视图等。此更新还提高了Mac的稳定性，可靠性和安全性。 Finder•从Finder共享iCloud Drive文件夹 •进行控制，以仅将访问权限限制为您明确邀请的人员，或者将访问权限授予具有文件夹链接的任何人 •有权选择谁可以进行更改和上传文件以及谁只能查看和下载文件 Screen Time•沟通限制，用于控制您的孩子在一整天和停机期间可以与谁进行沟通和联系 •为孩子播放音乐视频的控制 Music•Apple Music的时间同步歌词视图，包括通过单击歌词视图中的一行来跳到歌曲中您喜欢的部分的功能 Safari•选择将Chrome密码导入到iCloud钥匙串中，以便在Safari和所有设备中轻松自动填充密码 •用于复制选项卡和关闭当前选项卡右侧的所有选项卡的控件 •兼容计算机上对Netflix内容的HDR播放支持 带有Apple Arcade的App Store•通用购买支持可在iPhone，iPod touch，iPad，Mac和Apple TV上单个购买参与应用程序 •最近玩过的Arcade游戏出现在Arcade选项卡中，因此您可以继续在iPhone，iPod touch，iPad，Mac和Apple TV上玩 Pro Display XDR•您可以通过从多个色域，白点，亮度和转印功能选项中进行选择，来定制适合特定工作流程需求的参考模式 辅助功能•头部指针首选项，用于根据头部的精确移动在屏幕上移动光标 此更新还包括错误修复和其他改进。•高动态范围输出到兼容HDR10的第三方显示器和与DisplayPort或HDMI连接的电视 •Outlook.com帐户的OAuth身份验证支持可提高安全性 •在辅助设备上升级到iCloud提醒时支持CalDav迁移 •解决了在启用“暗模式”时在应用之间复制的文本可能不可见的问题 •修复了Safari中验证码图块可能无法正确显示的问题 •解决了提醒可能会发送已完成提醒的通知的问题 •解决了从睡眠状态唤醒后LG UltraFine 5K显示屏的屏幕亮度问题]]></content>
       <categories>
-          
-          <category> 黑苹果 </category>
-          
+        <category>黑苹果</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 黑苹果 </tag>
-            
-            <tag> MacOS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>黑苹果 ｜ 常见的驱动配置</title>
-      <link href="/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE/"/>
-      <url>/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<p>黑苹果 ｜ 常见的驱动配置<br><a id="more"></a><br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JAVASCRIPT"><figure class="iseeu highlight /javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// mac Panel效果代码块相关</span></span><br><span class="line"><span class="keyword">var</span> attributes = [</span><br><span class="line">  <span class="string">'autocomplete="off"'</span>,</span><br><span class="line">  <span class="string">'autocorrect="off"'</span>,</span><br><span class="line">  <span class="string">'autocapitalize="off"'</span>,</span><br><span class="line">  <span class="string">'spellcheck="false"'</span>,</span><br><span class="line">  <span class="string">'contenteditable="true"'</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> attributesStr = attributes.join(<span class="string">' '</span>)</span><br><span class="line"></span><br><span class="line">hexo.extend.filter.register(<span class="string">'after_post_render'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">data</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">while</span> (<span class="regexp">/&lt;figure class="highlight ([a-zA-Z]+)"&gt;.*?&lt;\/figure&gt;/</span>.test(data.content)) &#123;</span><br><span class="line">    data.content = data.content.replace(<span class="regexp">/&lt;figure class="highlight ([a-zA-Z]+)"&gt;.*?&lt;\/figure&gt;/</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">var</span> language = <span class="built_in">RegExp</span>.$<span class="number">1</span> || <span class="string">'plain'</span></span><br><span class="line">      <span class="keyword">var</span> lastMatch = <span class="built_in">RegExp</span>.lastMatch</span><br><span class="line">      lastMatch = lastMatch.replace(<span class="regexp">/&lt;figure class="highlight /</span>, <span class="string">'&lt;figure class="iseeu highlight /'</span>)</span><br><span class="line">      <span class="keyword">return</span> <span class="string">'&lt;div class="highlight-wrap"'</span> + attributesStr + <span class="string">'data-rel="'</span> + language.toUpperCase() + <span class="string">'"&gt;'</span> + lastMatch + <span class="string">'&lt;/div&gt;'</span></span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> data</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></div></p>]]></content>
-      
-      
+      <tags>
+        <tag>黑苹果</tag>
+        <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[黑苹果 ｜ 常见的驱动配置]]></title>
+    <url>%2F%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[黑苹果 ｜ 常见的驱动配置12345678910111213141516171819202122// mac Panel效果代码块相关var attributes = [ 'autocomplete="off"', 'autocorrect="off"', 'autocapitalize="off"', 'spellcheck="false"', 'contenteditable="true"']var attributesStr = attributes.join(' ')hexo.extend.filter.register('after_post_render', function (data) &#123; while (/&lt;figure class="highlight ([a-zA-Z]+)"&gt;.*?&lt;\/figure&gt;/.test(data.content)) &#123; data.content = data.content.replace(/&lt;figure class="highlight ([a-zA-Z]+)"&gt;.*?&lt;\/figure&gt;/, function () &#123; var language = RegExp.$1 || 'plain' var lastMatch = RegExp.lastMatch lastMatch = lastMatch.replace(/&lt;figure class="highlight /, '&lt;figure class="iseeu highlight /') return '&lt;div class="highlight-wrap"' + attributesStr + 'data-rel="' + language.toUpperCase() + '"&gt;' + lastMatch + '&lt;/div&gt;' &#125;) &#125; return data&#125;)]]></content>
       <categories>
-          
-          <category> 黑苹果 </category>
-          
+        <category>黑苹果</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 黑苹果 </tag>
-            
-            <tag> MacOS </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>黑苹果 ｜ 详解Clove配置</title>
-      <link href="/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE/"/>
-      <url>/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE/</url>
-      
-        <content type="html"><![CDATA[<p>详解Clove配置<br><a id="more"></a><br><span id="inline-purple">Generate static files </span><br><span id="inline-yellow">Generate static files </span><br><span id="inline-green">Generate static files </span><br><span id="inline-blue">Generate static files </span></p>]]></content>
-      
-      
+      <tags>
+        <tag>黑苹果</tag>
+        <tag>MacOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[黑苹果 ｜ 详解Clove配置]]></title>
+    <url>%2F%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[详解Clove配置Generate static files Generate static files Generate static files Generate static files]]></content>
       <categories>
-          
-          <category> 黑苹果 </category>
-          
+        <category>黑苹果</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 黑苹果 </tag>
-            
-            <tag> MacOS </tag>
-            
-            <tag> Clover </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>如何安装Hexo开始你的博客生涯</title>
-      <link href="/hello_world/"/>
-      <url>/hello_world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br><a id="more"></a></p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">```w</span><br><span class="line"></span><br><span class="line">More info: [Writing](https://hexo.io/docs/writing.html)</span><br><span class="line"></span><br><span class="line"><span class="comment">### Run server</span></span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><p><span id="inline-purple">Generate static files </span><br><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div></p><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><p><i class="fa fa-pencil"></i>支持Markdown</p><p><a id="download" href="https://git-scm.com/download/win" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> Download Now</span> </a></p>]]></content>
-      
-      
+      <tags>
+        <tag>黑苹果</tag>
+        <tag>MacOS</tag>
+        <tag>Clover</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[如何安装Hexo开始你的博客生涯]]></title>
+    <url>%2Fhello_world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post123456789$ hexo new "My New Post"```wMore info: [Writing](https://hexo.io/docs/writing.html)### Run server``` bash$ hexo server More info: Server Generate static files 1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 支持Markdown Download Now]]></content>
       <categories>
-          
-          <category> Hexo </category>
-          
+        <category>Hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> HTML </tag>
-            
-            <tag> C# </tag>
-            
-            <tag> unity 3D </tag>
-            
-            <tag> Python </tag>
-            
-            <tag> NLP </tag>
-            
-            <tag> ML </tag>
-            
-            <tag> DL </tag>
-            
-            <tag> C++ </tag>
-            
-            <tag> C </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>HTML</tag>
+        <tag>C#</tag>
+        <tag>unity 3D</tag>
+        <tag>Python</tag>
+        <tag>NLP</tag>
+        <tag>ML</tag>
+        <tag>DL</tag>
+        <tag>C++</tag>
+        <tag>C</tag>
+      </tags>
+  </entry>
 </search>
