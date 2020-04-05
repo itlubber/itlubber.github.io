@@ -228,7 +228,7 @@
 
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><img src="images/logowhite.png"></span>
+        <span class="logo-line-before"><img src="/image/loading.gif" data-original="/images/logowhite.png"></span>
         
         <span class="logo-line-after"><i></i></span>
       </a>
@@ -470,7 +470,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
             <a href="/">
-              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="ITlubber">
+              <img class="site-author-image" itemprop="image" src="/image/loading.gif" data-original="/images/avatar.jpg" alt="ITlubber">
             </a>
             
               <p class="site-author-name" itemprop="name">ITlubber</p>
@@ -711,7 +711,7 @@ translateInitilization();
 </script>
 
   <div class="foot-logo">
-    <a href="http://itlubber.wiki"><img src="/images/logowhite.png"></a>
+    <a href="http://itlubber.wiki"><img src="/image/loading.gif" data-original="/images/logowhite.png"></a>
   </div>
 
         
@@ -1438,5 +1438,5 @@ translateInitilization();
   });
 </script>
 
-</body>
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
 </html>
