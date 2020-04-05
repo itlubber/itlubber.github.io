@@ -1974,7 +1974,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9d39;
+  background: #9dff29;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3502,6 +3502,7 @@ body {
   font-size: 14px;
 }
 .btn {
+  font-family: KaiTi;
   margin: 0;
   height: auto;
   border: 1px solid #333;

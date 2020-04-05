@@ -153,12 +153,12 @@
 <meta property="og:site_name" content="[object Object]">
 <meta property="og:description" content="前言随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。 从几个月前我就开始尝试驱动 DW1820A ，WIFI 驱动没问题，但是蓝牙各种翻车各种摔。功夫不负有心人，在众多热心网友的不断努力下，终于解决了蓝牙固件无法上传的问题，也因此就有了这篇驱动教程。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://itlubber.wiki/.wiki//loading.jpg">
+<meta property="og:image" content="http://itlubber.wiki/image/loading.jpg">
 <meta property="og:updated_time" content="2020-04-04T04:21:25.556Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DW1820A&#x2F;BCM94350ZAE&#x2F;BCM94356ZEPA50DX插入的正确姿势">
 <meta name="twitter:description" content="前言随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。 从几个月前我就开始尝试驱动 DW1820A ，WIFI 驱动没问题，但是蓝牙各种翻车各种摔。功夫不负有心人，在众多热心网友的不断努力下，终于解决了蓝牙固件无法上传的问题，也因此就有了这篇驱动教程。">
-<meta name="twitter:image" content="http://itlubber.wiki/.wiki//loading.jpg">
+<meta name="twitter:image" content="http://itlubber.wiki/image/loading.jpg">
 
 
 
@@ -235,7 +235,7 @@
 
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><img src="/image/loading.jpg" data-original="/images/logowhite.png"></span>
+        <span class="logo-line-before"><img src="/images/logowhite.png"></span>
         
         <span class="logo-line-after"><i></i></span>
       </a>
@@ -546,7 +546,7 @@
       
 
       
-        <p><img src="/.wiki//loading.jpg" data-original="/images/pasted-2.png" alt="upload successful"><br>前言<br>随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。</p>
+        <p><img src="/image/loading.jpg" data-original="/images/pasted-2.png" alt="upload successful"><br>前言<br>随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。</p>
 <p>从几个月前我就开始尝试驱动 DW1820A ，WIFI 驱动没问题，但是蓝牙各种翻车各种摔。功夫不负有心人，在众多热心网友的不断努力下，终于解决了蓝牙固件无法上传的问题，也因此就有了这篇驱动教程。<br><a id="more"></a><br>为什么是 DW1820A<br>新款部分笔记本只能塞下背面没有元器件的无线网卡，比如[联想小新PRO 13 2019]，此为刚需<br>价格：百元以内，不排除未来有涨价的可能<br>规格/参数：<br>DW1820A/BCM94350ZAE<br>M.2 2230<br>802.11ac 双频 支持2.4GHz/5GHz<br>867Mbps<br>BlueTooth 4.1<br>操作系统：支持 macOS / Windows / linux<br>已知支持的设备信息<br>WLAN:<br>Vendor: 0x14E4<br>Device: 0x43A3<br>Sub Vendor: 1028 or 106B<br>Sub Device: 0021 0022 0023 075a<br>Bluetooth:<br>Vendor ID: 0x0A5C<br>Product ID: 0x6412 0x6414<br>DELL DW1820A设备信息整理<br>Part Number    Manufacturer    Module    WLAN    BT 4.1<br>CN-0VW3T3    Dell Wireless 1820A 802.11ac    BCM94350ZAE_2    1028:0021    [0a5c:6412]<br>CN-0VW3T3    Dell Wireless 1820A 802.11ac    BCM94356ZEPA50DX_2    1028:0021    [0a5c:6412]<br>CN-096JNT    Dell Wireless 1820A 802.11ac    BCM94356ZEPA50DX_2    1028:0022    [0a5c:6412]<br>CN-08PKF4    Dell Wireless 1820A 802.11ac    BCM94356ZEPA50DX_2    1028:0023    [0a5c:6412]<br>联想版BCM94350设备信息整理<br>Part Number    Manufacturer    Module    WLAN    BT 4.1<br>00JT493    Lenovo    BCM94350ZAE_2    1028:075a    [0a5c:6414]<br>00JT494    Lenovo    BCM94350ZAE_2    1028:075a    [0a5c:6414]<br>联想及绝大多数机型可能需要屏蔽针脚测试，详见下图</p>
 <p>macOS驱动方法<br>采用 Device-&gt;Properties 注入参数以便于直接驱动 AirPortBrcm4360 而不是驱动 AirPort.BrcmNIC，这样做的好处就是避免某一天苹果不提供AirPortBrcm4350的支持，便于支持未来的系统，包括macOS Catalina等。</p>
 <p>WLAN无线网卡<br>如果开机直接就驱动了WIFI无线网卡并且能持续、稳定地工作，那么下面这段内容就可以直接跳过，转到驱动蓝牙部分。</p>
@@ -731,7 +731,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
             <a href="/">
-              <img class="site-author-image" itemprop="image" src="/image/loading.jpg" data-original="/images/avatar.jpg" alt="ITlubber">
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="ITlubber">
             </a>
             
               <p class="site-author-name" itemprop="name">ITlubber</p>
@@ -972,7 +972,7 @@ translateInitilization();
 </script>
 
   <div class="foot-logo">
-    <a href="http://itlubber.wiki"><img src="/image/loading.jpg" data-original="/images/logowhite.png"></a>
+    <a href="http://itlubber.wiki"><img src="/images/logowhite.png"></a>
   </div>
 
         
