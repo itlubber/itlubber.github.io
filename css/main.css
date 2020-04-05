@@ -1960,6 +1960,7 @@ pre .javascript .function {
   margin-bottom: 10px;
   border-bottom-color: #555;
   font-size: 13px;
+  color: #333;
 }
 .links-of-author a:before {
   display: inline-block;
@@ -1969,7 +1970,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3effbf;
+  background: #df7039;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3451,10 +3452,6 @@ a#download:hover {
 .header-inner {
   background: #fff;
 }
-.footer {
-  color: #f173ac;
-  font-size: 14px;
-}
 body {
   background: url("/images/background.jpg");
   background-attachment: fixed;
@@ -3651,7 +3648,7 @@ highlight-wrap {
 #footer {
   display: block;
   box-sizing: inherit;
-  height: 130px;
+  height: auto;
   background: rgba(255,255,255,0.5);
   color: #fff;
   font-weight: 400;
@@ -3666,9 +3663,10 @@ highlight-wrap {
 }
 #footer a {
   color: #fff;
+  border: none;
 }
 .footer-inner {
-  margin-top: 50px;
+  margin-top: 35px;
 }
 .post-nav {
   float: left;
@@ -3697,10 +3695,38 @@ highlight-wrap {
   border-top: none;
   border-bottom: 2px solid #f173ac;
 }
+.links-of-blogroll {
+  border-top: 2px solid #333;
+  margin-top: 5px;
+}
+.links-of-author {
+  margin-top: 10px;
+}
+.foot-links-of-author {
+  margin-bottom: 5px;
+}
+.foot-links-of-author-item a {
+  border-bottom: none;
+}
+.navigation__item {
+  display: inline-block;
+}
+.panel-main {
+  margin-top: 10%;
+  text-align: center;
+}
+.navigation--social {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navigation--social ul {
+  padding: 0;
+  margin: 0;
+}
 .feed-link a {
   display: block;
   border: none;
-  color: #f173ac;
 }
 .sidebar-nav .sidebar-nav-active {
   border-bottom-color: #f173ac;
@@ -3718,8 +3744,5 @@ highlight-wrap {
 }
 .post-toc .nav .active > a {
   border-bottom-color: #f173ac;
-  color: #f173ac;
-}
-.fa-rss:before {
   color: #f173ac;
 }
