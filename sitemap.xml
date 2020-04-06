@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://itlubber.wiki/entertainment/index.html</loc>
+    
+    <lastmod>2020-04-06T06:51:08.891Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://itlubber.wiki/bangumis/index.html</loc>
+    
+    <lastmod>2020-04-06T06:48:51.885Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://itlubber.wiki/hello_world/</loc>
     
     <lastmod>2020-04-06T06:28:33.778Z</lastmod>
@@ -12,20 +26,6 @@
     <loc>http://itlubber.wiki/AddBlibli/</loc>
     
     <lastmod>2020-04-06T05:39:40.657Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://itlubber.wiki/entertainment/index.html</loc>
-    
-    <lastmod>2020-04-06T05:33:47.748Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://itlubber.wiki/bangumis/index.html</loc>
-    
-    <lastmod>2020-04-06T03:36:05.732Z</lastmod>
     
   </url>
   
