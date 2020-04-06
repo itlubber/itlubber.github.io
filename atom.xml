@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itlubber.wiki/"/>
-  <updated>2020-04-04T04:21:25.556Z</updated>
+  <updated>2020-04-06T05:21:34.072Z</updated>
   <id>http://itlubber.wiki/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给你的博客增加B站追番页面</title>
+    <link href="http://itlubber.wiki/AddBlibli/"/>
+    <id>http://itlubber.wiki/AddBlibli/</id>
+    <published>2020-04-06T04:02:03.000Z</published>
+    <updated>2020-04-06T05:21:34.072Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;本文通过hexo-bilibili-bangumi插件实现在博客中显示B站追番列表，效果请看下图&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/loading.jpg&quot; data-original=&quot;/images/
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://itlubber.wiki/categories/Hexo/"/>
+    
+      <category term="hexo-bilibili-bangumi" scheme="http://itlubber.wiki/categories/Hexo/hexo-bilibili-bangumi/"/>
+    
+    
+      <category term="Hexo" scheme="http://itlubber.wiki/tags/Hexo/"/>
+    
+      <category term="Blibli" scheme="http://itlubber.wiki/tags/Blibli/"/>
+    
+      <category term="bangumi" scheme="http://itlubber.wiki/tags/bangumi/"/>
+    
+  </entry>
   
   <entry>
     <title>DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势</title>
@@ -138,7 +170,7 @@
     <link href="http://itlubber.wiki/hello_world/"/>
     <id>http://itlubber.wiki/hello_world/</id>
     <published>2017-08-18T07:41:00.000Z</published>
-    <updated>2020-04-04T04:20:28.793Z</updated>
+    <updated>2020-04-06T04:01:41.717Z</updated>
     
     <summary type="html">
     

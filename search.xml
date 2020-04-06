@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[给你的博客增加B站追番页面]]></title>
+    <url>%2FAddBlibli%2F</url>
+    <content type="text"><![CDATA[本文通过hexo-bilibili-bangumi插件实现在博客中显示B站追番列表，效果请看下图 插件安装与更新 安装 12$ cd myblog # cd 到你的博客主目录下方$ npm install hexo-bilibili-bangumi --save # 通过npm的方式安装插件 更新 12$ cd myblog$ npm install hexo-bilibili-bangumi --update --save 配置安装插件后在你的博客配置文件中添加配置项 1234567bangumi: enable: true vmid: title: '追番列表' quote: '生命不息，追番不止！' show: 1 loading: '/img/bangumi-loading.gif' enable : 是否启用插件 vmid : 哔哩哔哩番剧页面的 vmid(uid) quote : 写在页面开头的一段话,支持html语法 show : 初始显示页面：0: 想看, 1: 在看, 2: 看过，默认为1 loading : 图片加载完成前的loading图片 生成bangumi页并更新追番动态 生成bangumi页 1234$ cd myblog$ hexo new page bangumi$ cd source$ vim bangumi.md 在Front-matter里添加type: bangumis 123title: bangumisdate: 2018-01-05 00:00:00+ type: "bangumis" #添加项 在主题配置文件，添加bangumis栏 1234567menu: home: / || home about: /about/ || user tags: /tags/ || tags categories: /categories/ || th archives: /archives/ || archive + blibli: /bangumis || play #添加项 生成Hexo页面并更新追番动态 1$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo bangumis -u &amp;&amp; hexo d 如果你项删除追番数据，可以执行下面的指令 1$ hexo bangumis -d hexo-bilibili-bangumi插件安装配置完成，进入你的博客网站查看效果吧！！！ 参考链接 hexo-bilibili-bangumi : https://github.com/HCLonely/hexo-bilibili-bangumi]]></content>
+      <categories>
+        <category>Hexo</category>
+        <category>hexo-bilibili-bangumi</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blibli</tag>
+        <tag>bangumi</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势]]></title>
     <url>%2FDW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF%2F</url>
     <content type="text"><![CDATA[前言随着 DW1830 / DW1560 价格的不断走高，能找到一款性价比超高的无线网卡对广大的 Hackintosher 来说就显得至关重要了。 从几个月前我就开始尝试驱动 DW1820A ，WIFI 驱动没问题，但是蓝牙各种翻车各种摔。功夫不负有心人，在众多热心网友的不断努力下，终于解决了蓝牙固件无法上传的问题，也因此就有了这篇驱动教程。为什么是 DW1820A新款部分笔记本只能塞下背面没有元器件的无线网卡，比如[联想小新PRO 13 2019]，此为刚需价格：百元以内，不排除未来有涨价的可能规格/参数：DW1820A/BCM94350ZAEM.2 2230802.11ac 双频 支持2.4GHz/5GHz867MbpsBlueTooth 4.1操作系统：支持 macOS / Windows / linux已知支持的设备信息WLAN:Vendor: 0x14E4Device: 0x43A3Sub Vendor: 1028 or 106BSub Device: 0021 0022 0023 075aBluetooth:Vendor ID: 0x0A5CProduct ID: 0x6412 0x6414DELL DW1820A设备信息整理Part Number Manufacturer Module WLAN BT 4.1CN-0VW3T3 Dell Wireless 1820A 802.11ac BCM94350ZAE_2 1028:0021 [0a5c:6412]CN-0VW3T3 Dell Wireless 1820A 802.11ac BCM94356ZEPA50DX_2 1028:0021 [0a5c:6412]CN-096JNT Dell Wireless 1820A 802.11ac BCM94356ZEPA50DX_2 1028:0022 [0a5c:6412]CN-08PKF4 Dell Wireless 1820A 802.11ac BCM94356ZEPA50DX_2 1028:0023 [0a5c:6412]联想版BCM94350设备信息整理Part Number Manufacturer Module WLAN BT 4.100JT493 Lenovo BCM94350ZAE_2 1028:075a [0a5c:6414]00JT494 Lenovo BCM94350ZAE_2 1028:075a [0a5c:6414]联想及绝大多数机型可能需要屏蔽针脚测试，详见下图 macOS驱动方法采用 Device-&gt;Properties 注入参数以便于直接驱动 AirPortBrcm4360 而不是驱动 AirPort.BrcmNIC，这样做的好处就是避免某一天苹果不提供AirPortBrcm4350的支持，便于支持未来的系统，包括macOS Catalina等。 WLAN无线网卡如果开机直接就驱动了WIFI无线网卡并且能持续、稳定地工作，那么下面这段内容就可以直接跳过，转到驱动蓝牙部分。]]></content>
