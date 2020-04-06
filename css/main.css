@@ -1920,7 +1920,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7cffff;
+  background: #6b8221;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3714,11 +3714,17 @@ blockquote.question {
   width: 20px;
   padding-right: 5px;
 }
+.logo-line-before {
+  margin-bottom: 15px;
+}
+.site-subtitle {
+  margin: 0 5px 0;
+}
 .navigation__item {
   display: inline-block;
 }
 .panel-main {
-  margin-top: -65%;
+  margin-top: -300px;
   text-align: center;
 }
 .navigation--social {
