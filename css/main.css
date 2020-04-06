@@ -1920,7 +1920,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5d91ff;
+  background: #ff1d4d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3674,9 +3674,8 @@ highlight-wrap {
   padding-top: 8px;
 }
 .content-wrap {
-  margin-bottom: 37px;
-  padding-top: 0;
-  padding-bottom: 5px;
+  margin-bottom: 0;
+  padding-bottom: 100px;
 }
 .fluid-vids {
   margin: 0;
@@ -3718,7 +3717,7 @@ blockquote.question {
   display: inline-block;
 }
 .panel-main {
-  margin-top: 16%;
+  margin-top: -65%;
   text-align: center;
 }
 .navigation--social {
