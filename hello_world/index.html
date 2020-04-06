@@ -134,7 +134,7 @@
 
 
 
-  <meta name="keywords" content="HTML,C#,unity 3D,Python,NLP,ML,DL,C++,C,">
+  <meta name="keywords" content="HTML,C#,unity 3D,Python,">
 
 
 
@@ -146,14 +146,14 @@
 
 
 <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta name="keywords" content="HTML,C#,unity 3D,Python,NLP,ML,DL,C++,C">
+<meta name="keywords" content="HTML,C#,unity 3D,Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何安装Hexo开始你的博客生涯">
 <meta property="og:url" content="http://itlubber.wiki/hello_world/index.html">
 <meta property="og:site_name" content="[object Object]">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-06T04:01:41.717Z">
+<meta property="og:updated_time" content="2020-04-06T06:28:33.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何安装Hexo开始你的博客生涯">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
@@ -490,6 +490,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/hello_world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/hello_world/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -571,12 +581,28 @@
       
     </div>
 
-    <div>
-      
-        
-<div>
     
-        <div calss="post-end-tag" style="text-align:center;">----------------------本文到此结束
+    
+    
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+            
+              <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
+            
+              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C#</a>
+            
+              <a href="/tags/unity-3D/" rel="tag"><i class="fa fa-tag"></i> unity 3D</a>
+            
+              <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+            
+        </div>
+      
+      <div>
+        
+          <div>
+    
+        <div calss="post-end-tag" style="text-align:center;">--------  本文到此结束&nbsp;&nbsp;
         
           
           <div id="needsharebutton-postbottom">
@@ -585,43 +611,12 @@
             </span>
           </div>
         
-        束结此到文本----------------------
+          &nbsp;&nbsp;束结此到文本  --------
         </div>
     
 </div>
-      
-    </div>
-
-    
-    
-    
-
-    
-      <div class="post-tags">
-          
-            <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
-          
-            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C#</a>
-          
-            <a href="/tags/unity-3D/" rel="tag"><i class="fa fa-tag"></i> unity 3D</a>
-          
-            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
-          
-            <a href="/tags/NLP/" rel="tag"><i class="fa fa-tag"></i> NLP</a>
-          
-            <a href="/tags/ML/" rel="tag"><i class="fa fa-tag"></i> ML</a>
-          
-            <a href="/tags/DL/" rel="tag"><i class="fa fa-tag"></i> DL</a>
-          
-            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
-          
-            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C</a>
-          
+        
       </div>
-    
-    
-    <footer class="post-footer">
-
       
 
       
@@ -652,7 +647,7 @@
       <!-- 修改时间 -->
       <li>
         <strong>修改时间： </strong>
-        2020年04月06日 - 12:01:41
+        2020年04月06日 - 14:28:33
       </li>
 
       <!-- 引用链接 -->
@@ -805,7 +800,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1221,6 +1216,28 @@ translateInitilization();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '7yW1CJQHcrj3y9OqsWhCl2gJ-gzGzoHsz',
+        appKey: 'cwdDpLRBr2E6AD9RjdJI4efh',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
 
 
 

@@ -407,17 +407,6 @@
             
   <section id="posts" class="posts-expand">
     
-      <!-- 首页显示标签  -->
-	    
-	      <div class="post-tags">
-	        
-	            <a href="/tags/黑苹果/" rel="tag"><i class="fa fa-tag"></i> 黑苹果</a>
-	        
-	            <a href="/tags/MacOS/" rel="tag"><i class="fa fa-tag"></i> MacOS</a>
-	        
-	      </div>
-	    
-		  <!-- 首页显示标签 end -->
       
 
   
@@ -498,6 +487,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/黑苹果-｜-常见的驱动配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/黑苹果-｜-常见的驱动配置/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -583,18 +582,14 @@
       
     </div>
 
-    <div>
-      
-    </div>
-
     
-    
-    
-
     
     
     <footer class="post-footer">
-
+      
+      <div>
+        
+      </div>
       
 
       
@@ -614,7 +609,6 @@
   
   </article>
 
-    
       <!-- 首页显示标签  -->
 	    
 	      <div class="post-tags">
@@ -623,11 +617,10 @@
 	        
 	            <a href="/tags/MacOS/" rel="tag"><i class="fa fa-tag"></i> MacOS</a>
 	        
-	            <a href="/tags/Clover/" rel="tag"><i class="fa fa-tag"></i> Clover</a>
-	        
 	      </div>
 	    
 		  <!-- 首页显示标签 end -->
+    
       
 
   
@@ -708,6 +701,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/黑苹果-｜-详解Clove配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/黑苹果-｜-详解Clove配置/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -793,18 +796,14 @@
       
     </div>
 
-    <div>
-      
-    </div>
-
     
-    
-    
-
     
     
     <footer class="post-footer">
-
+      
+      <div>
+        
+      </div>
       
 
       
@@ -824,6 +823,19 @@
   
   </article>
 
+      <!-- 首页显示标签  -->
+	    
+	      <div class="post-tags">
+	        
+	            <a href="/tags/黑苹果/" rel="tag"><i class="fa fa-tag"></i> 黑苹果</a>
+	        
+	            <a href="/tags/MacOS/" rel="tag"><i class="fa fa-tag"></i> MacOS</a>
+	        
+	            <a href="/tags/Clover/" rel="tag"><i class="fa fa-tag"></i> Clover</a>
+	        
+	      </div>
+	    
+		  <!-- 首页显示标签 end -->
     
   </section>
 
@@ -901,7 +913,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1297,6 +1309,28 @@ translateInitilization();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '7yW1CJQHcrj3y9OqsWhCl2gJ-gzGzoHsz',
+        appKey: 'cwdDpLRBr2E6AD9RjdJI4efh',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'5' || 10,
+    });
+  </script>
 
 
 

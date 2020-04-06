@@ -1920,7 +1920,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffbd50;
+  background: #834942;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3371,7 +3371,6 @@ a#download:hover {
 #rewardButton span {
   width: 35px;
   height: 35px;
-  border-radius: 5px;
   background: #34495e;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   font-size: 15px;
@@ -3393,7 +3392,7 @@ a#download:hover {
   cursor: url("/images/pointer.cur"), auto !important;
 }
 .content-wrap {
-  background: rgba(255,255,255,0.5);
+  background: #fff;
   color: #333;
 }
 .sidebar {
@@ -3417,21 +3416,15 @@ body {
   height: 400px;
   opacity: 0.9;
 }
-.post .post-type-normal {
-  margin-bottom: -50px;
-}
 .posts-expand .post-meta {
   margin-bottom: 15px;
   color: #333;
 }
 .post-button {
-  margin-bottom: 20px;
-}
-.post-block {
-  padding-bottom: 0;
+  margin: 25px auto -40px auto;
 }
 .post-nav {
-  border-top: 1px solid #333;
+  border-top: 2px solid #333;
 }
 .comments {
   float: left;
@@ -3449,6 +3442,7 @@ body {
 .post-end-tag {
   color: rgba(33,33,33,0.9);
   font-size: 14px;
+  align-content: center;
 }
 .btn {
   font-family: KaiTi;
@@ -3464,7 +3458,7 @@ body {
   color: #fff;
 }
 .post-block {
-  margin-bottom: 0;
+  margin: 50px auto -70px auto;
 }
 .back-to-top {
   right: 105px;
@@ -3574,7 +3568,6 @@ highlight-wrap {
   display: inline-block;
   padding: 2px 6px;
   border: 1px solid #d5d5d5;
-  border-radius: 3px;
   background-color: #eee;
   background-image: linear-gradient(#fcfcfc, #eee);
   color: #333;
@@ -3598,11 +3591,12 @@ highlight-wrap {
 .highlight:hover .btn-copy {
   opacity: 1;
 }
+.posts-expand .post-tags {
+  margin-top: 0;
+}
 .posts-expand .post-tags a {
-  margin: 5px;
   padding: 3px 5px;
   border-bottom: none;
-  border-radius: 15px;
   background: #f5f5f5;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   font-family: 'Comic Sans MS', sans-serif;
@@ -3612,14 +3606,14 @@ highlight-wrap {
 }
 .post-footer {
   height: 10px;
-  border-top: 2px solid #333;
+  border-top: none;
   margin-top: 5px;
+  background: none;
 }
 #footer {
   display: block;
   box-sizing: inherit;
   height: 150px;
-  background: rgba(255,255,255,0.5);
   color: #fff;
   font-weight: 400;
   font-size: 14px;
@@ -3649,7 +3643,7 @@ highlight-wrap {
   font-size: 12px;
 }
 .pagination {
-  margin: 0;
+  margin: 40px auto 0 auto;
   height: auto;
   border-top: none;
 }
@@ -3669,7 +3663,7 @@ highlight-wrap {
   margin-top: 5px;
 }
 .foot-links-of-author {
-  font-size: 18px;
+  font-size: 14px;
 }
 .foot-links-of-author-item a {
   border-bottom: none;
@@ -3707,6 +3701,18 @@ blockquote.question {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   margin-bottom: 20px;
+}
+.posts-expand .post-eof {
+  display: block;
+  margin: 13% auto 10%;
+  width: 100%;
+  height: 2px;
+  background: #f173ac;
+  text-align: center;
+}
+.fa-share-alt {
+  width: 20px;
+  padding-right: 5px;
 }
 .navigation__item {
   display: inline-block;
