@@ -1920,7 +1920,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b5ff2e;
+  background: #ff61ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3445,7 +3445,6 @@ body {
   align-content: center;
 }
 .btn {
-  font-family: KaiTi;
   margin: 0;
   height: auto;
   border: 1px solid #333;

@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://itlubber.wiki/"/>
-  <updated>2020-04-06T07:40:44.528Z</updated>
-  <id>http://itlubber.wiki/</id>
+  <link href="http://itlubber.github.io/"/>
+  <updated>2020-04-06T07:40:44.000Z</updated>
+  <id>http://itlubber.github.io/</id>
   
   <author>
     <name>ITlubber</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>给你的博客增加B站追番页面</title>
-    <link href="http://itlubber.wiki/AddBlibli/"/>
-    <id>http://itlubber.wiki/AddBlibli/</id>
+    <link href="http://itlubber.github.io/AddBlibli/"/>
+    <id>http://itlubber.github.io/AddBlibli/</id>
     <published>2020-04-06T04:02:03.000Z</published>
-    <updated>2020-04-06T07:40:44.528Z</updated>
+    <updated>2020-04-06T07:40:44.000Z</updated>
     
     <summary type="html">
     
@@ -31,25 +31,25 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://itlubber.wiki/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://itlubber.github.io/categories/Hexo/"/>
     
-      <category term="hexo-bilibili-bangumi" scheme="http://itlubber.wiki/categories/Hexo/hexo-bilibili-bangumi/"/>
+      <category term="hexo-bilibili-bangumi" scheme="http://itlubber.github.io/categories/Hexo/hexo-bilibili-bangumi/"/>
     
     
-      <category term="Hexo" scheme="http://itlubber.wiki/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://itlubber.github.io/tags/Hexo/"/>
     
-      <category term="Blibli" scheme="http://itlubber.wiki/tags/Blibli/"/>
+      <category term="Blibli" scheme="http://itlubber.github.io/tags/Blibli/"/>
     
-      <category term="bangumi" scheme="http://itlubber.wiki/tags/bangumi/"/>
+      <category term="bangumi" scheme="http://itlubber.github.io/tags/bangumi/"/>
     
   </entry>
   
   <entry>
     <title>DW1820A/BCM94350ZAE/BCM94356ZEPA50DX插入的正确姿势</title>
-    <link href="http://itlubber.wiki/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
-    <id>http://itlubber.wiki/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX插入的正确姿势/</id>
+    <link href="http://itlubber.github.io/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX%E6%8F%92%E5%85%A5%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
+    <id>http://itlubber.github.io/DW1820A-BCM94350ZAE-BCM94356ZEPA50DX插入的正确姿势/</id>
     <published>2020-04-03T17:00:00.000Z</published>
-    <updated>2020-04-04T04:21:25.556Z</updated>
+    <updated>2020-04-04T04:21:25.000Z</updated>
     
     <summary type="html">
     
@@ -58,23 +58,23 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+      <category term="MacOS" scheme="http://itlubber.github.io/tags/MacOS/"/>
     
-      <category term="无线网卡" scheme="http://itlubber.wiki/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/"/>
+      <category term="无线网卡" scheme="http://itlubber.github.io/tags/%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/"/>
     
   </entry>
   
   <entry>
     <title>使用AppleALC声卡仿冒驱动AppleHDA的正确姿势</title>
-    <link href="http://itlubber.wiki/%E4%BD%BF%E7%94%A8AppleALC%E5%A3%B0%E5%8D%A1%E4%BB%BF%E5%86%92%E9%A9%B1%E5%8A%A8AppleHDA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
-    <id>http://itlubber.wiki/使用AppleALC声卡仿冒驱动AppleHDA的正确姿势/</id>
+    <link href="http://itlubber.github.io/%E4%BD%BF%E7%94%A8AppleALC%E5%A3%B0%E5%8D%A1%E4%BB%BF%E5%86%92%E9%A9%B1%E5%8A%A8AppleHDA%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/"/>
+    <id>http://itlubber.github.io/使用AppleALC声卡仿冒驱动AppleHDA的正确姿势/</id>
     <published>2020-04-03T16:58:00.000Z</published>
-    <updated>2020-04-04T04:21:27.768Z</updated>
+    <updated>2020-04-04T04:21:27.000Z</updated>
     
     <summary type="html">
     
@@ -82,23 +82,23 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+      <category term="MacOS" scheme="http://itlubber.github.io/tags/MacOS/"/>
     
-      <category term="Apple ALC" scheme="http://itlubber.wiki/tags/Apple-ALC/"/>
+      <category term="Apple ALC" scheme="http://itlubber.github.io/tags/Apple-ALC/"/>
     
   </entry>
   
   <entry>
     <title>【黑果小兵】macOS Catalina 10.15.4 19E266 正式版 with Clover 5107原版镜像[双EFI版][UEFI and MBR]</title>
-    <link href="http://itlubber.wiki/%E3%80%90%E9%BB%91%E6%9E%9C%E5%B0%8F%E5%85%B5%E3%80%91macOS-Catalina-10-15-4-19E266-%E6%AD%A3%E5%BC%8F%E7%89%88-with-Clover-5107%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F-%E5%8F%8CEFI%E7%89%88-UEFI-and-MBR/"/>
-    <id>http://itlubber.wiki/【黑果小兵】macOS-Catalina-10-15-4-19E266-正式版-with-Clover-5107原版镜像-双EFI版-UEFI-and-MBR/</id>
+    <link href="http://itlubber.github.io/%E3%80%90%E9%BB%91%E6%9E%9C%E5%B0%8F%E5%85%B5%E3%80%91macOS-Catalina-10-15-4-19E266-%E6%AD%A3%E5%BC%8F%E7%89%88-with-Clover-5107%E5%8E%9F%E7%89%88%E9%95%9C%E5%83%8F-%E5%8F%8CEFI%E7%89%88-UEFI-and-MBR/"/>
+    <id>http://itlubber.github.io/【黑果小兵】macOS-Catalina-10-15-4-19E266-正式版-with-Clover-5107原版镜像-双EFI版-UEFI-and-MBR/</id>
     <published>2020-04-03T16:56:00.000Z</published>
-    <updated>2020-04-04T04:21:29.717Z</updated>
+    <updated>2020-04-04T04:21:29.000Z</updated>
     
     <summary type="html">
     
@@ -106,21 +106,21 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+      <category term="MacOS" scheme="http://itlubber.github.io/tags/MacOS/"/>
     
   </entry>
   
   <entry>
     <title>黑苹果 ｜ 常见的驱动配置</title>
-    <link href="http://itlubber.wiki/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE/"/>
-    <id>http://itlubber.wiki/黑苹果-｜-常见的驱动配置/</id>
+    <link href="http://itlubber.github.io/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E5%B8%B8%E8%A7%81%E7%9A%84%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE/"/>
+    <id>http://itlubber.github.io/黑苹果-｜-常见的驱动配置/</id>
     <published>2020-03-30T15:58:00.000Z</published>
-    <updated>2020-04-03T17:01:50.459Z</updated>
+    <updated>2020-04-03T17:01:50.000Z</updated>
     
     <summary type="html">
     
@@ -128,21 +128,21 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+      <category term="MacOS" scheme="http://itlubber.github.io/tags/MacOS/"/>
     
   </entry>
   
   <entry>
     <title>黑苹果 ｜ 详解Clove配置</title>
-    <link href="http://itlubber.wiki/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE/"/>
-    <id>http://itlubber.wiki/黑苹果-｜-详解Clove配置/</id>
+    <link href="http://itlubber.github.io/%E9%BB%91%E8%8B%B9%E6%9E%9C-%EF%BD%9C-%E8%AF%A6%E8%A7%A3Clove%E9%85%8D%E7%BD%AE/"/>
+    <id>http://itlubber.github.io/黑苹果-｜-详解Clove配置/</id>
     <published>2020-03-30T14:43:00.000Z</published>
-    <updated>2020-04-03T01:44:10.094Z</updated>
+    <updated>2020-04-03T01:44:10.000Z</updated>
     
     <summary type="html">
     
@@ -150,23 +150,23 @@
     
     </summary>
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/categories/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
     
-      <category term="黑苹果" scheme="http://itlubber.wiki/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+      <category term="黑苹果" scheme="http://itlubber.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
     
-      <category term="MacOS" scheme="http://itlubber.wiki/tags/MacOS/"/>
+      <category term="MacOS" scheme="http://itlubber.github.io/tags/MacOS/"/>
     
-      <category term="Clover" scheme="http://itlubber.wiki/tags/Clover/"/>
+      <category term="Clover" scheme="http://itlubber.github.io/tags/Clover/"/>
     
   </entry>
   
   <entry>
     <title>如何安装Hexo开始你的博客生涯</title>
-    <link href="http://itlubber.wiki/hello_world/"/>
-    <id>http://itlubber.wiki/hello_world/</id>
+    <link href="http://itlubber.github.io/hello_world/"/>
+    <id>http://itlubber.github.io/hello_world/</id>
     <published>2017-08-18T07:41:00.000Z</published>
-    <updated>2020-04-06T06:28:33.778Z</updated>
+    <updated>2020-04-06T06:28:33.000Z</updated>
     
     <summary type="html">
     
@@ -174,16 +174,16 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://itlubber.wiki/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://itlubber.github.io/categories/Hexo/"/>
     
     
-      <category term="HTML" scheme="http://itlubber.wiki/tags/HTML/"/>
+      <category term="HTML" scheme="http://itlubber.github.io/tags/HTML/"/>
     
-      <category term="C#" scheme="http://itlubber.wiki/tags/C/"/>
+      <category term="C#" scheme="http://itlubber.github.io/tags/C/"/>
     
-      <category term="unity 3D" scheme="http://itlubber.wiki/tags/unity-3D/"/>
+      <category term="unity 3D" scheme="http://itlubber.github.io/tags/unity-3D/"/>
     
-      <category term="Python" scheme="http://itlubber.wiki/tags/Python/"/>
+      <category term="Python" scheme="http://itlubber.github.io/tags/Python/"/>
     
   </entry>
   
