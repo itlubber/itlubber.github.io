@@ -12,9 +12,11 @@ html {
   height: 6px; }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fe2; }
+  /* border-radius: .25em;  */
+  background-color: #fe2;}
 
 ::-webkit-scrollbar-track {
+  /* border-radius: .25em; */
   background-color: #9b8b16; }
 
 body {
@@ -438,6 +440,7 @@ aside {
 
 #post-bg {
   padding: 20px 30px 0 30px;
+  /* border-right: #fe2 solid 2px; */
   margin-bottom: 40px;
   background-color: rgba(20, 21, 22, 0.8); }
   #post-bg img {
