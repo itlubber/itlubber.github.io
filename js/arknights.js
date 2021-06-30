@@ -1,5 +1,6 @@
-class dust {
-    constructor() {
+"use strict";
+var dust = /** @class */ (function () {
+    function dust() {
         this.x = 50;
         this.y = 50;
         this.vx = Math.random() * 2 + 2;
@@ -12,59 +13,64 @@ class dust {
         this.radiusY = Math.random() * 3;
         this.rotation = Math.PI * Math.floor(Math.random() * 2);
     }
-}
-class canvasDust {
-    constructor(canvasID) {
+    return dust;
+}());
+var canvasDust = /** @class */ (function () {
+    function canvasDust(canvasID) {
+        var _this = this;
         this.width = 300;
         this.height = 300;
         this.dustQuantity = 50;
         this.dustArr = [];
-        const canvas = document.getElementById(canvasID);
+        var canvas = document.getElementById(canvasID);
         if (canvas) {
             this.canvas = canvas;
             this.ctx = canvas.getContext('2d');
             this.build();
-            window.addEventListener('resize', () => this.resize());
+            window.addEventListener('resize', function () { return _this.resize(); });
         }
         else {
-            throw new Error('canvasID 无效');
+            // throw new Error('canvasID 无效');
         }
     }
-    build() {
+    canvasDust.prototype.build = function () {
+        var _this = this;
         this.resize();
         if (this.ctx) {
-            const point = canvasDust.getPoint(this.dustQuantity);
-            for (let i of point) {
-                const dustObj = new dust();
+            var point = canvasDust.getPoint(this.dustQuantity);
+            for (var _i = 0, point_1 = point; _i < point_1.length; _i++) {
+                var i = point_1[_i];
+                var dustObj = new dust();
                 this.buildDust(i[0], i[1], dustObj);
                 this.dustArr.push(dustObj);
             }
-            setInterval(() => {
-                this.play();
+            setInterval(function () {
+                _this.play();
             }, 40);
         }
-    }
-    play() {
+    };
+    canvasDust.prototype.play = function () {
         var _a;
-        const dustArr = this.dustArr;
+        var dustArr = this.dustArr;
         (_a = this.ctx) === null || _a === void 0 ? void 0 : _a.clearRect(0, 0, this.width, this.height);
-        for (let i of dustArr) {
+        for (var _i = 0, dustArr_1 = dustArr; _i < dustArr_1.length; _i++) {
+            var i = dustArr_1[_i];
             if (i.x < 0 || i.y < 0) {
-                const x = this.width;
-                const y = Math.floor(Math.random() * window.innerHeight);
+                var x = this.width;
+                var y = Math.floor(Math.random() * window.innerHeight);
                 i.x = x;
                 i.y = y;
                 this.buildDust(x, y, i);
             }
             else {
-                const x = i.x - i.vx;
-                const y = i.y - i.vy;
+                var x = i.x - i.vx;
+                var y = i.y - i.vy;
                 this.buildDust(x, y, i);
             }
         }
-    }
-    buildDust(x, y, dust) {
-        const ctx = this.ctx;
+    };
+    canvasDust.prototype.buildDust = function (x, y, dust) {
+        var ctx = this.ctx;
         if (x)
             dust.x = x;
         if (y)
@@ -80,11 +86,11 @@ class canvasDust {
             ctx.fillStyle = dust.color;
             ctx.fill();
         }
-    }
-    resize() {
-        const canvas = this.canvas;
-        const width = window.innerWidth;
-        const height = window.innerHeight;
+    };
+    canvasDust.prototype.resize = function () {
+        var canvas = this.canvas;
+        var width = window.innerWidth;
+        var height = window.innerHeight;
         this.width = width;
         this.height = height;
         this.dustQuantity = Math.floor((width + height) / 38);
@@ -92,47 +98,51 @@ class canvasDust {
             canvas.width = width;
             canvas.height = height;
         }
-    }
-    static getPoint(number = 1) {
-        let point = [];
-        for (let i = 0; i < number; i++) {
-            const x = Math.floor(Math.random() * window.innerWidth);
-            const y = Math.floor(Math.random() * window.innerHeight);
+    };
+    canvasDust.getPoint = function (number) {
+        if (number === void 0) { number = 1; }
+        var point = [];
+        for (var i = 0; i < number; i++) {
+            var x = Math.floor(Math.random() * window.innerWidth);
+            var y = Math.floor(Math.random() * window.innerHeight);
             point.push([x, y]);
         }
         return point;
-    }
-}
-class index {
-    constructor() {
+    };
+    return canvasDust;
+}());
+var index = /** @class */ (function () {
+    function index() {
+        var _this = this;
         this.index = [];
         this.headerLink = document.getElementsByClassName("headerlink");
         this.tocLink = document.getElementsByClassName("toc-link");
         this.postContent = document.getElementById("post-content");
         this.article = document.getElementsByTagName("article")[0];
         if (this.article) {
-            this.article.addEventListener("scroll", () => {
-                for (let i = 0; i < this.headerLink.length; i++) {
-                    const link = this.headerLink.item(i);
+            this.article.addEventListener("scroll", function () {
+                for (var i = 0; i < _this.headerLink.length; i++) {
+                    var link = _this.headerLink.item(i);
                     if (link) {
-                        this.index.push(link.getBoundingClientRect().top);
+                        _this.index.push(link.getBoundingClientRect().top);
                     }
                 }
-                for (let i in this.index) {
-                    const item = this.tocLink.item(Number(i));
+                for (var i in _this.index) {
+                    var item = _this.tocLink.item(Number(i));
                     item.classList.remove('active');
                 }
-                for (let i in this.index) {
-                    const item = this.tocLink.item(Number(i));
-                    if (this.index[i] > 0) {
+                for (var i in _this.index) {
+                    var item = _this.tocLink.item(Number(i));
+                    if (_this.index[i] > 0) {
                         item.classList.add('active');
                         break;
                     }
                 }
-                this.index = [];
+                _this.index = [];
             });
         }
     }
-}
+    return index;
+}());
 new canvasDust('canvas-dust');
 new index();
