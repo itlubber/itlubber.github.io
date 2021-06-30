@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>孤立森林异常值检测 | ITlubber</title><script src="https://cdn.bootcss.com/valine/1.4.4/Valine.min.js"></script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 5.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head><body><header><nav><a href="/">Home</a><a href="/archives/">Archives</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></header><main><article><div id="post-bg"><div id="post-title"><div id="post-info"><span>date:<time datetime="2021-06-30T05:48:40.000Z" id="date"> 2021-06-30</time></span><br><span>updated:<time datetime="2021-06-30T07:01:09.010Z" id="updated"> 2021-06-30</time></span></div><h1>孤立森林异常值检测</h1><hr></div><div id="post-content"><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><blockquote>
+<p><strong>异常值检测</strong>是目前时序数据分析最成熟的应用之一，是从正常的时间序列中识别不正常的事件或行为的过程。是在大量数据中找出离群值（和大多数数据点显著不同的数据点）的过程。</p>
+<blockquote>
+<p>目前学术界对异常（anomaly detection）的定义有很多种，iForest适用与连续数据（Continuous numerical data）的异常检测，将异常定义为“容易被孤立的离群点 (more likely to be separated)”——可以理解为分布稀疏且离密度高的群体较远的点。用统计学来解释，在数据空间里面，分布稀疏的区域表示数据发生在此区域的概率很低，因而可以认为落在这些区域里的数据是异常的。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>常见的场景</strong>：网络安全中的攻击检测、金融交易欺诈检测、疾病侦测、噪声数据过滤等。</p>
+</blockquote>
+<h1 id="孤立森林（Isolation-Forest）"><a href="#孤立森林（Isolation-Forest）" class="headerlink" title="孤立森林（Isolation Forest）"></a>孤立森林（Isolation Forest）</h1><h2 id="基础理论"><a href="#基础理论" class="headerlink" title="基础理论"></a>基础理论</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">异常数据占总样本量的比例很小<br>异常点的特征值与正常点的差异很大<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>paper</strong> <a target="_blank" rel="noopener" href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf">https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf</a><br><strong>code</strong> <a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html">https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html</a></p>
+</blockquote>
+<h2 id="算法细节"><a href="#算法细节" class="headerlink" title="算法细节"></a>算法细节</h2><h3 id="孤立树"><a href="#孤立树" class="headerlink" title="孤立树"></a>孤立树</h3><blockquote>
+<img src="/images/itree.png" style="width: 35%;">
+</blockquote>
+<h3 id="孤立树剪枝"><a href="#孤立树剪枝" class="headerlink" title="孤立树剪枝"></a>孤立树剪枝</h3><blockquote>
+<img src="/images/itree_cut.png" style="width: 35%;">
+</blockquote>
+<h3 id="孤立森林"><a href="#孤立森林" class="headerlink" title="孤立森林"></a>孤立森林</h3><blockquote>
+<img src="/images/forest.png" style="width: 35%;">
+</blockquote>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h3 id="通用代码逻辑实现"><a href="#通用代码逻辑实现" class="headerlink" title="通用代码逻辑实现"></a>通用代码逻辑实现</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">from</span> sklearn.ensemble <span class="hljs-keyword">import</span> IsolationForest<br><br><br>color = [<span class="hljs-string">"#2639E9"</span>, <span class="hljs-string">"#F76E6C"</span>, <span class="hljs-string">"#FE7715"</span>]<br><br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">anomaly_detection</span>:</span><br>    <br>    model = <span class="hljs-literal">None</span><br>    _ratio = <span class="hljs-number">0.125</span><br>    <br><span class="hljs-meta">    @classmethod</span><br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">train</span>(<span class="hljs-params">cls, x, x_cols=<span class="hljs-literal">None</span></span>):</span><br>        <span class="hljs-keyword">if</span> x_cols:<br>            anomaly_detection.model = IsolationForest(<br>                                            n_estimators=<span class="hljs-number">256</span><br>                                            , n_jobs=-<span class="hljs-number">1</span><br>                                            , contamination=cls._ratio<br>                                            , max_features=np.floor(np.sqrt(<span class="hljs-built_in">len</span>(x_cols)))<br><br>                                        )<br>            cls.model.fit(x[x_cols])<br>        <span class="hljs-keyword">else</span>:<br>            <span class="hljs-keyword">raise</span> RuntimeError(<span class="hljs-string">'Train Error'</span>)<br>        <br><span class="hljs-meta">    @classmethod</span><br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">predict</span>(<span class="hljs-params">cls, x=<span class="hljs-literal">None</span>, x_cols=<span class="hljs-literal">None</span></span>):</span><br>        <span class="hljs-keyword">if</span> x_cols:<br>            <br>            x[<span class="hljs-string">'y'</span>] = cls.model.predict(x[x_cols]) == -<span class="hljs-number">1</span><br>            x[<span class="hljs-string">'rule'</span>] = x[x_cols] &gt; x[x_cols].quantile(<span class="hljs-number">0.5</span>)<br>            x[<span class="hljs-string">'anomaly'</span>] = (x[<span class="hljs-string">'y'</span>] &amp; x[<span class="hljs-string">'rule'</span>]).astype(<span class="hljs-built_in">bool</span>)<br>            <span class="hljs-keyword">return</span> x[x_cols+[<span class="hljs-string">'anomaly'</span>]]<br>        <span class="hljs-keyword">else</span>:<br>            <span class="hljs-keyword">raise</span> RuntimeError(<span class="hljs-string">'Predict Error'</span>)<br>    <br><span class="hljs-meta">    @classmethod</span><br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">plot</span>(<span class="hljs-params">cls, res, x_cols=<span class="hljs-literal">None</span>, figsize=(<span class="hljs-params"><span class="hljs-number">20</span>, <span class="hljs-number">5</span></span>)</span>):</span><br>        <span class="hljs-keyword">if</span> x_cols:<br>            plt.figure(figsize=figsize, dpi=<span class="hljs-number">120</span>)<br>            plt.plot(res.index, res[x_cols], color=color[<span class="hljs-number">0</span>])<br>            plt.scatter(res[res[<span class="hljs-string">'anomaly'</span>]].index, res[res[<span class="hljs-string">'anomaly'</span>]][x_cols], color=color[<span class="hljs-number">1</span>])<br>        <span class="hljs-keyword">else</span>:<br>            <span class="hljs-keyword">raise</span> RuntimeError(<span class="hljs-string">'Plot Error'</span>)<br>    <br><span class="hljs-meta">    @classmethod</span><br>    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">execute_all</span>(<span class="hljs-params">cls, x, x_cols=<span class="hljs-literal">None</span>, ratio = <span class="hljs-number">0.125</span></span>):</span><br>        cls._ratio = ratio<br>        <span class="hljs-keyword">if</span> x_cols:<br>            cls.train(x, x_cols=x_cols)<br>            res = cls.predict(x, x_cols=x_cols)<br>            cls.plot(res, x_cols=x_cols)<br>            print(<span class="hljs-string">f"异常数据的比例为 <span class="hljs-subst">{res[<span class="hljs-string">'anomaly'</span>].<span class="hljs-built_in">sum</span>()/<span class="hljs-built_in">len</span>(res)}</span>"</span>)<br>            <span class="hljs-keyword">return</span> res<br>        <span class="hljs-keyword">else</span>:<br>            <span class="hljs-keyword">raise</span> RuntimeError(<span class="hljs-string">'Input Error'</span>)    <br></code></pre></td></tr></table></figure>
+<h3 id="代码样例"><a href="#代码样例" class="headerlink" title="代码样例"></a>代码样例</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">d = df.resample(<span class="hljs-string">"D"</span>)[[<span class="hljs-string">'事项编号'</span>]].count().rename(columns={<span class="hljs-string">"事项编号"</span>: <span class="hljs-string">"件数"</span>}).replace(<span class="hljs-number">0</span>, np.nan)<br>x_cols = [<span class="hljs-string">"件数"</span>]<br>x = pd.DataFrame()<br><span class="hljs-keyword">for</span> year <span class="hljs-keyword">in</span> [<span class="hljs-string">'2019'</span>, <span class="hljs-string">'2020'</span>, <span class="hljs-string">'2021'</span>]:<br>    x = pd.concat([x,anomaly_detection.execute_all(d[year].fillna(<span class="hljs-number">0</span>), x_cols=x_cols)])<br>x<br></code></pre></td></tr></table></figure>
+<h3 id="代码开源"><a href="#代码开源" class="headerlink" title="代码开源"></a>代码开源</h3><blockquote>
+<p><strong>github</strong> <a target="_blank" rel="noopener" href="https://github.com/itlubber/itlubber">https://github.com/itlubber/itlubber</a><br><strong>pipy</strong> <a target="_blank" rel="noopener" href="https://pypi.org/project/itlubber/">https://pypi.org/project/itlubber/</a><br><strong>install</strong> <code>pip install itlubber</code></p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> anomaly_detection<br>anomaly_detection.execute_all(d[year].fillna(<span class="hljs-number">0</span>), x_cols=x_cols)<br></code></pre></td></tr></table></figure><div id="paginator"></div></div><div id="post-footer"><hr><a href="/2020/04/15/markdown/">Markdown 教程 Next →</a><hr></div><div id="bottom-btn"><a id="to-index" href="#post-index" title="index">≡</a><a id="to-top" href="#post-title" title="to top">∧</a></div><div id="Valine"></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/2.png" alt="Logo"></a><h1 id="Dr"><a href="/"> Dr.itlubber</a></h1><section id="total"><a id="total-archives" href="/archives"><span class="total-title">Archives Total:</span><span class="total-number">2</span></a><div id="total-tags"><span class="total-title">Tags:</span><span class="total-number">3</span></div><div id="total-categories"><span class="total-title">Categories:</span><span class="total-number">3</span></div></section></div><div id="aside-block"><h1>INDEX</h1><div id="post-index"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%A4%E7%AB%8B%E6%A3%AE%E6%9E%97%EF%BC%88Isolation-Forest%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">孤立森林（Isolation Forest）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%90%86%E8%AE%BA"><span class="toc-number">2.1.</span> <span class="toc-text">基础理论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E7%BB%86%E8%8A%82"><span class="toc-number">2.2.</span> <span class="toc-text">算法细节</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A4%E7%AB%8B%E6%A0%91"><span class="toc-number">2.2.1.</span> <span class="toc-text">孤立树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A4%E7%AB%8B%E6%A0%91%E5%89%AA%E6%9E%9D"><span class="toc-number">2.2.2.</span> <span class="toc-text">孤立树剪枝</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A4%E7%AB%8B%E6%A3%AE%E6%9E%97"><span class="toc-number">2.2.3.</span> <span class="toc-text">孤立森林</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.3.</span> <span class="toc-text">代码实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E7%94%A8%E4%BB%A3%E7%A0%81%E9%80%BB%E8%BE%91%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.3.1.</span> <span class="toc-text">通用代码逻辑实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E6%A0%B7%E4%BE%8B"><span class="toc-number">2.3.2.</span> <span class="toc-text">代码样例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%BC%80%E6%BA%90"><span class="toc-number">2.3.3.</span> <span class="toc-text">代码开源</span></a></li></ol></li></ol></li></ol></div></div><footer><nobr><span class="text-title">D</span><span class="text-content">2018 to 2021</span></nobr><wbr><nobr><span class="text-title">E</span><span class="text-content">itlubber@gmail.com</span></nobr><wbr><wbr><nobr>ITlubber |&nbsp;<a href="http://itlubber.art">街を守り、人を待ちわびて</a></nobr></footer></aside></main><script src="/js/arknights.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script></body></html>
